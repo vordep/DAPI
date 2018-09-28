@@ -1,0 +1,151 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HomeTeam to Home Team",
+    "oldColumnName": "HomeTeam",
+    "newColumnName": "Home Team"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AwayTeam to Away Team",
+    "oldColumnName": "AwayTeam",
+    "newColumnName": "Away Team"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column FTHG to Full Time Home Team Goals",
+    "oldColumnName": "FTHG",
+    "newColumnName": "Full Time Home Team Goals"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column FTAG to Full Time Away Team Goals",
+    "oldColumnName": "FTAG",
+    "newColumnName": "Full Time Away Team Goals"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column FTR to Full Time Result",
+    "oldColumnName": "FTR",
+    "newColumnName": "Full Time Result"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HTHG to Half Time Home Team Goals",
+    "oldColumnName": "HTHG",
+    "newColumnName": "Half Time Home Team Goals"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HTAG to Half Time Away Team Goals",
+    "oldColumnName": "HTAG",
+    "newColumnName": "Half Time Away Team Goals"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HTR to Half Time Result",
+    "oldColumnName": "HTR",
+    "newColumnName": "Half Time Result"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HS to Home Team Shots",
+    "oldColumnName": "HS",
+    "newColumnName": "Home Team Shots"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AS to Away Team Shots",
+    "oldColumnName": "AS",
+    "newColumnName": "Away Team Shots"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HST to Home Team Shots on Target",
+    "oldColumnName": "HST",
+    "newColumnName": "Home Team Shots on Target"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AST to Away Team Shots on Target",
+    "oldColumnName": "AST",
+    "newColumnName": "Away Team Shots on Target"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HF to Home Team Fouls Committed",
+    "oldColumnName": "HF",
+    "newColumnName": "Home Team Fouls Committed"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AF to Away Team Fouls Committed",
+    "oldColumnName": "AF",
+    "newColumnName": "Away Team Fouls Committed"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HC to Home Team Corners",
+    "oldColumnName": "HC",
+    "newColumnName": "Home Team Corners"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AC to Away Team Corners",
+    "oldColumnName": "AC",
+    "newColumnName": "Away Team Corners"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HY to Home Team Yellow Cards",
+    "oldColumnName": "HY",
+    "newColumnName": "Home Team Yellow Cards"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AY to Away Team Yellow Cards",
+    "oldColumnName": "AY",
+    "newColumnName": "Away Team Yellow Cards"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column HR to Home Team Red Cards",
+    "oldColumnName": "HR",
+    "newColumnName": "Home Team Red Cards"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column AR to Away Team Red Cards",
+    "oldColumnName": "AR",
+    "newColumnName": "Away Team Red Cards"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "Div",
+      "Date",
+      "Home Team",
+      "Away Team",
+      "Full Time Home Team Goals",
+      "Full Time Away Team Goals",
+      "Full Time Result",
+      "Half Time Home Team Goals",
+      "Half Time Away Team Goals",
+      "Half Time Result",
+      "Referee",
+      "Home Team Shots",
+      "Away Team Shots",
+      "Home Team Shots on Target",
+      "Away Team Shots on Target",
+      "Home Team Fouls Committed",
+      "Away Team Fouls Committed",
+      "Home Team Corners",
+      "Away Team Corners",
+      "Home Team Yellow Cards",
+      "Away Team Yellow Cards",
+      "Home Team Red Cards",
+      "Away Team Red Cards"
+    ]
+  }
+]
