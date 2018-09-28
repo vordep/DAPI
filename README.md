@@ -6,7 +6,7 @@
 
  [Report](https://www.overleaf.com/9521727969rpwxxbmntddh)
 
- [Slides Folder](https://drive.google.com/drive/folders/1zlNTPPlGnnyC4kVAcn8voCPJRgKKA98J?usp=sharing)
+ [GDrive Folder](https://drive.google.com/drive/folders/1zlNTPPlGnnyC4kVAcn8voCPJRgKKA98J?usp=sharing)
 
 [OpenRefine Tutorial](https://github.com/OpenRefine/OpenRefine/wiki/Getting-Started)
 
