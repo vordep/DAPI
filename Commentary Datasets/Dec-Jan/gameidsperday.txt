@@ -1,0 +1,220 @@
+480761           Chelsea           Newcastle United
+
+ 480759    Brighton & Hove Albion       Liverpool
+
+ 480758           Everton           Huddersfield Town
+
+ 480756        Leicester City            Burnley
+
+ 480763          Stoke City           Swansea City
+
+ 480764           Watford           Tottenham Hotspur
+
+ 480757     West Bromwich Albion     Crystal Palace
+
+ 480760           Arsenal           Manchester United
+-20171202
+ 480762      AFC Bournemouth       Southampton
+
+ 480765      Manchester City     West Ham United
+-20171203
+ 480749      West Ham United            Chelsea
+
+ 480754          Burnley                Watford
+
+ 480747      Crystal Palace         AFC Bournemouth
+
+ 480748     Huddersfield Town    Brighton & Hove Albion
+
+ 480755       Swansea City        West Bromwich Albion
+
+ 480753     Tottenham Hotspur          Stoke City
+
+ 480751     Newcastle United         Leicester City
+-20171209
+ 480746        Southampton           Arsenal
+
+ 480750         Liverpool            Everton
+
+ 480752     Manchester United    Manchester City
+-20171210
+ 480745          Burnley          Stoke City
+
+ 480741      Crystal Palace         Watford
+
+ 480743     Huddersfield Town       Chelsea
+-20171212
+ 480738     Newcastle United            Everton
+
+ 480739        Southampton           Leicester City
+
+ 480744       Swansea City          Manchester City
+
+ 480737         Liverpool         West Bromwich Albion
+
+ 480740     Manchester United       AFC Bournemouth
+
+ 480736     Tottenham Hotspur    Brighton & Hove Albion
+
+ 480742      West Ham United            Arsenal
+-20171213
+ 480727        Leicester City        Crystal Palace
+
+ 480731           Arsenal           Newcastle United
+
+ 480726    Brighton & Hove Albion        Burnley
+
+ 480732           Chelsea              Southampton
+
+ 480728           Watford           Huddersfield Town
+
+ 480735          Stoke City          West Ham United
+
+ 480734       Manchester City       Tottenham Hotspur
+-20171216
+ 480730    West Bromwich Albion   Manchester United
+
+ 480729      AFC Bournemouth          Liverpool
+-20171217
+ 480733          Everton         Swansea City
+-20171218
+ 480720          Arsenal           Liverpool
+-20171222
+ 480717           Everton                 Chelsea
+
+ 480724    Brighton & Hove Albion         Watford
+
+ 480716       Manchester City         AFC Bournemouth
+
+ 480719         Southampton          Huddersfield Town
+
+ 480725          Stoke City         West Bromwich Albion
+
+ 480718         Swansea City           Crystal Palace
+
+ 480722       West Ham United         Newcastle United
+
+ 480723           Burnley            Tottenham Hotspur
+
+ 480721        Leicester City        Manchester United
+-20171223
+ 480712     Tottenham Hotspur          Southampton
+
+ 480715      AFC Bournemouth         West Ham United
+
+ 480707          Chelsea          Brighton & Hove Albion
+
+ 480713     Huddersfield Town           Stoke City
+
+ 480708     Manchester United            Burnley
+
+ 480710          Watford              Leicester City
+
+ 480709    West Bromwich Albion          Everton
+
+ 480714         Liverpool              Swansea City
+-20171226
+ 480711     Newcastle United     Manchester City
+-20171227
+ 480706      Crystal Palace         Arsenal
+-20171228
+ 480699      AFC Bournemouth            Everton
+
+ 480703          Chelsea               Stoke City
+
+ 480698     Huddersfield Town           Burnley
+
+ 480700         Liverpool            Leicester City
+
+ 480697     Newcastle United     Brighton & Hove Albion
+
+ 480704          Watford              Swansea City
+
+ 480702     Manchester United         Southampton
+-20171230
+ 480701       Crystal Palace      Manchester City
+
+ 480696    West Bromwich Albion       Arsenal
+-20171231
+ 480686    Brighton & Hove Albion    AFC Bournemouth
+
+ 480690           Burnley               Liverpool
+
+ 480689        Leicester City       Huddersfield Town
+
+ 480692          Stoke City         Newcastle United
+
+ 480691           Everton           Manchester United
+-20180101
+ 480688        Southampton          Crystal Palace
+
+ 480693       Swansea City        Tottenham Hotspur
+
+ 480695      West Ham United     West Bromwich Albion
+
+ 480694      Manchester City           Watford
+-20180102
+ 480687          Arsenal            Chelsea
+-20180103
+ 480705     Tottenham Hotspur    West Ham United
+-20180104
+ 480680          Chelsea              Leicester City
+
+ 480678       Crystal Palace             Burnley
+
+ 480685     Huddersfield Town        West Ham United
+
+ 480684      Newcastle United          Swansea City
+
+ 480682          Watford               Southampton
+
+ 480677    West Bromwich Albion   Brighton & Hove Albion
+
+ 480679     Tottenham Hotspur            Everton
+-20180113
+ 480676      AFC Bournemouth         Arsenal
+
+ 480681         Liverpool        Manchester City
+-20180114
+ 480683     Manchester United     Stoke City
+-20180115
+ 480667    Brighton & Hove Albion         Chelsea
+
+ 480668           Arsenal              Crystal Palace
+
+ 480671           Burnley            Manchester United
+
+ 480675           Everton           West Bromwich Albion
+
+ 480674        Leicester City             Watford
+
+ 480669          Stoke City          Huddersfield Town
+
+ 480666       West Ham United         AFC Bournemouth
+
+ 480672       Manchester City         Newcastle United
+-20180120
+ 480673        Southampton       Tottenham Hotspur
+-20180121
+480670       Swansea City         Liverpool
+-20180122
+ 480663       Swansea City          Arsenal
+
+ 480664      West Ham United     Crystal Palace
+
+ 480665     Huddersfield Town      Liverpool
+-20180130
+ 480659          Chelsea            AFC Bournemouth
+
+ 480662          Everton             Leicester City
+
+ 480661     Newcastle United            Burnley
+
+ 480660        Southampton       Brighton & Hove Albion
+
+ 480658      Manchester City      West Bromwich Albion
+
+ 480657        Stoke City               Watford
+
+ 480656     Tottenham Hotspur      Manchester United
+-20180131
