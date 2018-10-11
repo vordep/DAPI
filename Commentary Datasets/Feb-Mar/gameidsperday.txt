@@ -1,0 +1,127 @@
+ 480649           Burnley            Manchester City
+
+ 480652       AFC Bournemouth          Stoke City
+
+ 480655    Brighton & Hove Albion    West Ham United
+
+ 480653        Leicester City         Swansea City
+
+ 480648      Manchester United      Huddersfield Town
+
+ 480651     West Bromwich Albion       Southampton
+
+ 480647           Arsenal                Everton
+-20180203
+ 480650      Crystal Palace      Newcastle United
+
+ 480654         Liverpool        Tottenham Hotspur
+-20180204
+ 480646          Watford            Chelsea
+-20180205
+ 480636     Tottenham Hotspur           Arsenal
+
+ 480640          Everton             Crystal Palace
+
+ 480638        Stoke City        Brighton & Hove Albion
+
+ 480639       Swansea City              Burnley
+
+ 480644      West Ham United            Watford
+
+ 480641      Manchester City         Leicester City
+-20180210
+ 480637     Huddersfield Town     AFC Bournemouth
+
+ 480643     Newcastle United     Manchester United
+
+ 480642        Southampton           Liverpool
+-20180211
+ 480645          Chelsea         West Bromwich Albion
+-20180212
+ 480632        Leicester City          Stoke City
+
+ 480630       AFC Bournemouth       Newcastle United
+
+ 480633    Brighton & Hove Albion     Swansea City
+
+ 480631           Burnley              Southampton
+
+ 480635          Liverpool           West Ham United
+
+ 480628     West Bromwich Albion    Huddersfield Town
+
+ 480627           Watford                Everton
+-20180224
+ 480634      Crystal Palace      Tottenham Hotspur
+
+ 480626     Manchester United         Chelsea
+-20180225
+ 480629          Arsenal         Manchester City
+-20180301
+ 480619          Burnley               Everton
+
+ 480617      Leicester City        AFC Bournemouth
+
+ 480623        Southampton            Stoke City
+
+ 480625       Swansea City         West Ham United
+
+ 480620     Tottenham Hotspur     Huddersfield Town
+
+ 480624          Watford         West Bromwich Albion
+
+ 480622         Liverpool          Newcastle United
+-20180303
+ 480616    Brighton & Hove Albion      Arsenal
+
+ 480618       Manchester City          Chelsea
+-20180304
+ 480621      Crystal Palace      Manchester United
+-20180305
+ 480610     Manchester United           Liverpool
+
+ 480606          Everton          Brighton & Hove Albion
+
+ 480613     Huddersfield Town          Swansea City
+
+ 480612      Newcastle United          Southampton
+
+ 480609    West Bromwich Albion       Leicester City
+
+ 480607      West Ham United             Burnley
+
+ 480608          Chelsea              Crystal Palace
+-20180310
+ 480615          Arsenal              Watford
+
+ 480614      AFC Bournemouth     Tottenham Hotspur
+-20180311
+ 480611        Stoke City        Manchester City
+-20180312
+ 480605      AFC Bournemouth     West Bromwich Albion
+
+ 480599     Huddersfield Town       Crystal Palace
+
+ 480600        Stoke City              Everton
+
+ 480604         Liverpool              Watford
+-20180317
+ 480590        Crystal Palace           Liverpool
+
+ 480589    Brighton & Hove Albion    Leicester City
+
+ 480593      Manchester United        Swansea City
+
+ 480588       Newcastle United      Huddersfield Town
+
+ 480586           Watford            AFC Bournemouth
+
+ 480587     West Bromwich Albion         Burnley
+
+ 480893       West Ham United          Southampton
+
+ 480591           Everton            Manchester City
+-20180331
+
+
+
