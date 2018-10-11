@@ -1,148 +1,93 @@
-480836        Arsenal        Brighton & Hove Albion
-
- 480837        Everton               Burnley
-
- 480840    Newcastle United         Liverpool
 -20171001
- 480831        Liverpool       Manchester United
-
- 480835         Burnley         West Ham United
-
- 480828     Crystal Palace          Chelsea
-
- 480833     Manchester City       Stoke City
-
- 480830      Swansea City      Huddersfield Town
-
- 480827    Tottenham Hotspur    AFC Bournemouth
-
- 480826         Watford             Arsenal
+480836        Arsenal        Brighton & Hove Albion
+ 480837        Everton               Burnley
+ 480840    Newcastle United         Liverpool
 -20171014
- 480829    Brighton & Hove Albion       Everton
-
- 480832         Southampton         Newcastle United
+ 480831        Liverpool       Manchester United
+ 480835         Burnley         West Ham United
+ 480828     Crystal Palace          Chelsea
+ 480833     Manchester City       Stoke City
+ 480830      Swansea City      Huddersfield Town
+ 480827    Tottenham Hotspur    AFC Bournemouth
+ 480826         Watford             Arsenal
 -20171015
- 480834      Leicester City      West Bromwich Albion
+ 480829    Brighton & Hove Albion       Everton
+ 480832         Southampton         Newcastle United
 -20171016
- 480818      West Ham United     Brighton & Hove Albion
+ 480834      Leicester City      West Bromwich Albion
 -20171020
- 480824          Chelsea               Watford
-
- 480823     Huddersfield Town     Manchester United
-
- 480819      Manchester City           Burnley
-
- 480820     Newcastle United        Crystal Palace
-
- 480817        Stoke City          AFC Bournemouth
-
- 480821       Swansea City          Leicester City
-
- 480825        Southampton       West Bromwich Albion
+ 480818      West Ham United     Brighton & Hove Albion
 -20171021
- 480816          Everton            Arsenal
-
- 480822     Tottenham Hotspur      Liverpool
+ 480824          Chelsea               Watford
+ 480823     Huddersfield Town     Manchester United
+ 480819      Manchester City           Burnley
+ 480820     Newcastle United        Crystal Palace
+ 480817        Stoke City          AFC Bournemouth
+ 480821       Swansea City          Leicester City
+ 480825        Southampton       West Bromwich Albion
 -20171022
- 480814     Manchester United     Tottenham Hotspur
-
- 480813          Arsenal            Swansea City
-
- 480815       Crystal Palace       West Ham United
-
- 480808         Liverpool         Huddersfield Town
-
- 480812          Watford             Stoke City
-
- 480809    West Bromwich Albion    Manchester City
-
- 480806      AFC Bournemouth           Chelsea
+ 480816          Everton            Arsenal
+ 480822     Tottenham Hotspur      Liverpool
 -20171028
- 480811    Brighton & Hove Albion    Southampton
-
- 480807        Leicester City          Everton
+ 480814     Manchester United     Tottenham Hotspur
+ 480813          Arsenal            Swansea City
+ 480815       Crystal Palace       West Ham United
+ 480808         Liverpool         Huddersfield Town
+ 480812          Watford             Stoke City
+ 480809    West Bromwich Albion    Manchester City
+ 480806      AFC Bournemouth           Chelsea
 -20171029
- 480810          Burnley         Newcastle United
+ 480811    Brighton & Hove Albion    Southampton
+ 480807        Leicester City          Everton
 -20171030
- 480801        Stoke City            Leicester City
-
- 480805     Huddersfield Town     West Bromwich Albion
-
- 480797     Newcastle United        AFC Bournemouth
-
- 480799        Southampton              Burnley
-
- 480798       Swansea City       Brighton & Hove Albion
-
- 480802      West Ham United           Liverpool
+ 480810          Burnley         Newcastle United
 -20171104
- 480800     Tottenham Hotspur     Crystal Palace
-
- 480796      Manchester City          Arsenal
-
- 480803          Chelsea         Manchester United
-
- 480804          Everton              Watford
+ 480801        Stoke City            Leicester City
+ 480805     Huddersfield Town     West Bromwich Albion
+ 480797     Newcastle United        AFC Bournemouth
+ 480799        Southampton              Burnley
+ 480798       Swansea City       Brighton & Hove Albion
+ 480802      West Ham United           Liverpool
 -20171105
- 480794          Arsenal          Tottenham Hotspur
-
- 480788      AFC Bournemouth      Huddersfield Town
-
- 480793          Burnley            Swansea City
-
- 480787       Crystal Palace           Everton
-
- 480789       Leicester City       Manchester City
-
- 480791         Liverpool            Southampton
-
- 480786    West Bromwich Albion        Chelsea
-
- 480790     Manchester United     Newcastle United
+ 480800     Tottenham Hotspur     Crystal Palace
+ 480796      Manchester City          Arsenal
+ 480803          Chelsea         Manchester United
+ 480804          Everton              Watford
 -20171118
- 480795          Watford         West Ham United
+ 480794          Arsenal          Tottenham Hotspur
+ 480788      AFC Bournemouth      Huddersfield Town
+ 480793          Burnley            Swansea City
+ 480787       Crystal Palace           Everton
+ 480789       Leicester City       Manchester City
+ 480791         Liverpool            Southampton
+ 480786    West Bromwich Albion        Chelsea
+ 480790     Manchester United     Newcastle United
 -20171119
- 480792    Brighton & Hove Albion    Stoke City
+ 480795          Watford         West Ham United
 -20171120
- 480781      West Ham United     Leicester City
+ 480792    Brighton & Hove Albion    Stoke City
 -20171124
- 480783      Crystal Palace            Stoke City
-
- 480778     Manchester United    Brighton & Hove Albion
-
- 480784     Newcastle United            Watford
-
- 480777       Swansea City          AFC Bournemouth
-
- 480785     Tottenham Hotspur     West Bromwich Albion
-
- 480779         Liverpool               Chelsea
+ 480781      West Ham United     Leicester City
 -20171125
- 480780        Southampton           Everton
-
- 480776          Burnley             Arsenal
-
- 480782     Huddersfield Town    Manchester City
+ 480783      Crystal Palace            Stoke City
+ 480778     Manchester United    Brighton & Hove Albion
+ 480784     Newcastle United            Watford
+ 480777       Swansea City          AFC Bournemouth
+ 480785     Tottenham Hotspur     West Bromwich Albion
+ 480779         Liverpool               Chelsea
 -20171126
- 480772    Brighton & Hove Albion    Crystal Palace
-
- 480775        Leicester City       Tottenham Hotspur
-
- 480774           Watford           Manchester United
-
- 480770     West Bromwich Albion    Newcastle United
+ 480780        Southampton           Everton
+ 480776          Burnley             Arsenal
+ 480782     Huddersfield Town    Manchester City
 -20171128
- 480771      AFC Bournemouth          Burnley
-
- 480773          Arsenal         Huddersfield Town
-
- 480768          Chelsea           Swansea City
-
- 480769          Everton          West Ham United
-
- 480767      Manchester City        Southampton
-
- 480766        Stoke City            Liverpool
+ 480772    Brighton & Hove Albion    Crystal Palace
+ 480775        Leicester City       Tottenham Hotspur
+ 480774           Watford           Manchester United
+ 480770     West Bromwich Albion    Newcastle United
 -20171129
-
-
+ 480771      AFC Bournemouth          Burnley
+ 480773          Arsenal         Huddersfield Town
+ 480768          Chelsea           Swansea City
+ 480769          Everton          West Ham United
+ 480767      Manchester City        Southampton
+ 480766        Stoke City            Liverpool

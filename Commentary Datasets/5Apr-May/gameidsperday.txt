@@ -1,120 +1,81 @@
- 480592          Arsenal            Stoke City
-
- 480594          Chelsea         Tottenham Hotspur
 -20180401
- 480582          Arsenal           Southampton
-
- 480585          Chelsea         West Ham United
+ 480592          Arsenal            Stoke City
+ 480594          Chelsea         Tottenham Hotspur
 -20180408
- 480569        Southampton              Chelsea
-
- 480571          Burnley             Leicester City
-
- 480568      Crystal Palace      Brighton & Hove Albion
-
- 480574     Huddersfield Town           Watford
-
- 480570       Swansea City              Everton
-
- 480567         Liverpool           AFC Bournemouth
-
- 480572     Tottenham Hotspur       Manchester City
+ 480582          Arsenal           Southampton
+ 480585          Chelsea         West Ham United
 -20180414
- 480566     Newcastle United           Arsenal
-
- 480575     Manchester United    West Bromwich Albion
+ 480569        Southampton              Chelsea
+ 480571          Burnley             Leicester City
+ 480568      Crystal Palace      Brighton & Hove Albion
+ 480574     Huddersfield Town           Watford
+ 480570       Swansea City              Everton
+ 480567         Liverpool           AFC Bournemouth
+ 480572     Tottenham Hotspur       Manchester City
 -20180415
- 480573      West Ham United      Stoke City
+ 480566     Newcastle United           Arsenal
+ 480575     Manchester United    West Bromwich Albion
 -20180416
- 480564    Brighton & Hove Albion   Tottenham Hotspur
+ 480573      West Ham United      Stoke City
 -20180417
- 480560      AFC Bournemouth     Manchester United
+ 480564    Brighton & Hove Albion   Tottenham Hotspur
 -20180418
- 480598          Burnley            Chelsea
-
- 480562      Leicester City       Southampton
+ 480560      AFC Bournemouth     Manchester United
 -20180419
- 480559    West Bromwich Albion     Liverpool
-
- 480557          Watford          Crystal Palace
+ 480598          Burnley            Chelsea
+ 480562      Leicester City       Southampton
 -20180421
- 480565          Arsenal         West Ham United
-
- 480556        Stoke City            Burnley
-
- 480563      Manchester City      Swansea City
+ 480559    West Bromwich Albion     Liverpool
+ 480557          Watford          Crystal Palace
 -20180422
- 480561          Everton         Newcastle United
+ 480565          Arsenal         West Ham United
+ 480556        Stoke City            Burnley
+ 480563      Manchester City      Swansea City
 -20180423
- 480553         Liverpool              Stoke City
-
- 480548          Burnley         Brighton & Hove Albion
-
- 480551      Crystal Palace          Leicester City
-
- 480550     Huddersfield Town           Everton
-
- 480555     Newcastle United      West Bromwich Albion
-
- 480547        Southampton          AFC Bournemouth
-
- 480549       Swansea City              Chelsea
+ 480561          Everton         Newcastle United
 -20180428
- 480552      West Ham United     Manchester City
-
- 480546     Manchester United        Arsenal
+ 480553         Liverpool              Stoke City
+ 480548          Burnley         Brighton & Hove Albion
+ 480551      Crystal Palace          Leicester City
+ 480550     Huddersfield Town           Everton
+ 480555     Newcastle United      West Bromwich Albion
+ 480547        Southampton          AFC Bournemouth
+ 480549       Swansea City              Chelsea
 -20180429
- 480554     Tottenham Hotspur       Watford
+ 480552      West Ham United     Manchester City
+ 480546     Manchester United        Arsenal
 -20180430
- 480540    Brighton & Hove Albion   Manchester United
+ 480554     Tottenham Hotspur       Watford
 -20180504
- 480537         Stoke City         Crystal Palace
-
- 480543      AFC Bournemouth        Swansea City
-
- 480545       Leicester City       West Ham United
-
- 480541          Watford          Newcastle United
-
- 480544    West Bromwich Albion   Tottenham Hotspur
-
- 480542          Everton             Southampton
+ 480540    Brighton & Hove Albion   Manchester United
 -20180505
- 480538      Manchester City     Huddersfield Town
-
- 480536          Arsenal              Burnley
-
- 480539          Chelsea             Liverpool
+ 480537         Stoke City         Crystal Palace
+ 480543      AFC Bournemouth        Swansea City
+ 480545       Leicester City       West Ham United
+ 480541          Watford          Newcastle United
+ 480544    West Bromwich Albion   Tottenham Hotspur
+ 480542          Everton             Southampton
 -20180506
- 480603       Swansea City        Southampton
+ 480538      Manchester City     Huddersfield Town
+ 480536          Arsenal              Burnley
+ 480539          Chelsea             Liverpool
 -20180508
- 480558          Chelsea           Huddersfield Town
-
- 480596      Leicester City             Arsenal
-
- 480597      Manchester City     Brighton & Hove Albion
-
- 480602     Tottenham Hotspur       Newcastle United
+ 480603       Swansea City        Southampton
 -20180509
- 480601      West Ham United     Manchester United
+ 480558          Chelsea           Huddersfield Town
+ 480596      Leicester City             Arsenal
+ 480597      Manchester City     Brighton & Hove Albion
+ 480602     Tottenham Hotspur       Newcastle United
 -20180510
- 480527          Burnley            AFC Bournemouth
-
- 480535      Crystal Palace       West Bromwich Albion
-
- 480526     Huddersfield Town           Arsenal
-
- 480528         Liverpool        Brighton & Hove Albion
-
- 480534     Manchester United           Watford
-
- 480529     Newcastle United            Chelsea
-
- 480532        Southampton          Manchester City
-
- 480533       Swansea City             Stoke City
-
- 480531     Tottenham Hotspur        Leicester City
-
- 480530      West Ham United            Everton
+ 480601      West Ham United     Manchester United
 -20180513
+ 480527          Burnley            AFC Bournemouth
+ 480535      Crystal Palace       West Bromwich Albion
+ 480526     Huddersfield Town           Arsenal
+ 480528         Liverpool        Brighton & Hove Albion
+ 480534     Manchester United           Watford
+ 480529     Newcastle United            Chelsea
+ 480532        Southampton          Manchester City
+ 480533       Swansea City             Stoke City
+ 480531     Tottenham Hotspur        Leicester City
+ 480530      West Ham United            Everton
