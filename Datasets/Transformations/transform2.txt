@@ -1,0 +1,15 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Date using expression grel:substring(value, 0, 2) + \"/\" + substring(value, 3,5) + \"/20\" + substring(value, 6, 8)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Date",
+    "expression": "grel:substring(value, 0, 2) + \"/\" + substring(value, 3,5) + \"/20\" + substring(value, 6, 8)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]
