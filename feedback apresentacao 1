@@ -1,0 +1,3 @@
+- Criar uma classe Exibithion em substituiçao da ligação ternária
+* Possibilidade de condensaçao das subclasses de highlight
+- Duas subclasses de Stats de associaçao (Home Stats e Away Stats) ou Incluir stats como atributos do match
