@@ -1,0 +1,3483 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column",
+    "columnName": "Column"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column id_game to Game ID",
+    "oldColumnName": "id_game",
+    "newColumnName": "Game ID"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column team_1_name to Team 1 Name",
+    "oldColumnName": "team_1_name",
+    "newColumnName": "Team 1 Name"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column team_2_name to Team 2 Name",
+    "oldColumnName": "team_2_name",
+    "newColumnName": "Team 2 Name"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column game_date to Date",
+    "oldColumnName": "game_date",
+    "newColumnName": "Date"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_1 to Home Player 1",
+    "oldColumnName": "home_player_1",
+    "newColumnName": "Home Player 1"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_2 to Home Player 2",
+    "oldColumnName": "home_player_2",
+    "newColumnName": "Home Player 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_3 to Home Player 3",
+    "oldColumnName": "home_player_3",
+    "newColumnName": "Home Player 3"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_4 to Home Player 4",
+    "oldColumnName": "home_player_4",
+    "newColumnName": "Home Player 4"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_5 to Home Player 5",
+    "oldColumnName": "home_player_5",
+    "newColumnName": "Home Player 5"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_6 to Home Player 6",
+    "oldColumnName": "home_player_6",
+    "newColumnName": "Home Player 6"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_7 to Home Player 7",
+    "oldColumnName": "home_player_7",
+    "newColumnName": "Home Player 7"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_8 to Home Player 8",
+    "oldColumnName": "home_player_8",
+    "newColumnName": "Home Player 8"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_9 to Home Player 9",
+    "oldColumnName": "home_player_9",
+    "newColumnName": "Home Player 9"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_10 to Home Player 10",
+    "oldColumnName": "home_player_10",
+    "newColumnName": "Home Player 10"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column home_player_11 to Home Player 11",
+    "oldColumnName": "home_player_11",
+    "newColumnName": "Home Player 11"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_1 to Away Player 1",
+    "oldColumnName": "away_player_1",
+    "newColumnName": "Away Player 1"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_2 to Away Player 2",
+    "oldColumnName": "away_player_2",
+    "newColumnName": "Away Player 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_3 to Away Player 3",
+    "oldColumnName": "away_player_3",
+    "newColumnName": "Away Player 3"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_4 to Away Player 4",
+    "oldColumnName": "away_player_4",
+    "newColumnName": "Away Player 4"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_5 to Away Player 5",
+    "oldColumnName": "away_player_5",
+    "newColumnName": "Away Player 5"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_6 to Away Player 6",
+    "oldColumnName": "away_player_6",
+    "newColumnName": "Away Player 6"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_7 to Away Player 7",
+    "oldColumnName": "away_player_7",
+    "newColumnName": "Away Player 7"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_8 to Away Player 8",
+    "oldColumnName": "away_player_8",
+    "newColumnName": "Away Player 8"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_9 to Away Player 9",
+    "oldColumnName": "away_player_9",
+    "newColumnName": "Away Player 9"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_10 to Away Player 10",
+    "oldColumnName": "away_player_10",
+    "newColumnName": "Away Player 10"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column away_player_11 to Away Player 11",
+    "oldColumnName": "away_player_11",
+    "newColumnName": "Away Player 11"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Date using expression grel:if(value.split(\".\")[1].toNumber() < 6, value.split(\".\")[0] + \"/\" + value.split(\".\")[1] + \"/\" + \"2018\", value.split(\".\")[0] + \"/\" + value.split(\".\")[1] + \"/\" + \"2017\")\",",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Date",
+    "expression": "grel:if(value.split(\".\")[1].toNumber() < 6, value.split(\".\")[0] + \"/\" + value.split(\".\")[1] + \"/\" + \"2018\", value.split(\".\")[0] + \"/\" + value.split(\".\")[1] + \"/\" + \"2017\")\",",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 1 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 1",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 2 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 2",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 3 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 4 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 4",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 5 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 5",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 6 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 6",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 7 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 8 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 8",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 9 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 10 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Home Player 11 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 11",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 1 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 1",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 2 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 2",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 3 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 4 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 4",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 5 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 5",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 6 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 7 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 7",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 8 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 9 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 9",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 10 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Away Player 11 using expression grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "grel:if(value.split(\"-\").length() == 2, value.split(\"-\")[1].toTitlecase() + \" \" + value.split(\"-\")[0].toTitlecase(), if(value.split(\"-\").length() == 1, value.toTitlecase(), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "alexander-arnold-trent"
+        ],
+        "to": "Trent Alexander-Arnold"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "aubameyang-pierre-emerick"
+        ],
+        "to": "Pierre-Emerick Aubameyang"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "calvert-lewin-dominic"
+        ],
+        "to": "Dominic Calvert-Lewin"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-bruyne-kevin"
+        ],
+        "to": "Kevin De Bruyne"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-gea-david"
+        ],
+        "to": "David de Gea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "calvert-lewin-dominic"
+        ],
+        "to": "Dominic Calvert-Lewin"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-bruyne-kevin"
+        ],
+        "to": "Kevin De Bruyne"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-gea-david"
+        ],
+        "to": "David de Gea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fosu-mensah-timothy"
+        ],
+        "to": "Timothy Fosu-Mensah"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "calvert-lewin-dominic"
+        ],
+        "to": "Dominic Calvert-Lewin"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-bruyne-kevin"
+        ],
+        "to": "Kevin De Bruyne"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-gea-david"
+        ],
+        "to": "David de Gea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fosu-mensah-timothy"
+        ],
+        "to": "Timothy Fosu-Mensah"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hojbjerg-pierre-emile"
+        ],
+        "to": "Pierre-Emile Højbjerg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fosu-mensah-timothy"
+        ],
+        "to": "Timothy Fosu-Mensah"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hojbjerg-pierre-emile"
+        ],
+        "to": "Pierre-Emile Højbjerg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "maitland-niles-ainsley"
+        ],
+        "to": "Ainsley Maitland-Niles"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hojbjerg-pierre-emile"
+        ],
+        "to": "Pierre-Emile Højbjerg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "maitland-niles-ainsley"
+        ],
+        "to": "Ainsley Maitland-Niles"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "robson-kanu-hal"
+        ],
+        "to": "Hal Robson-Kanu"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "son-heung-min"
+        ],
+        "to": "Son Heung-min"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-aanholt-patrick"
+        ],
+        "to": "Patrick van Aanholt"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-dijk-virgil"
+        ],
+        "to": "Virgil van Dijk"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "robson-kanu-hal"
+        ],
+        "to": "Hal Robson-Kanu"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "son-heung-min"
+        ],
+        "to": "Son Heung-min"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-aanholt-patrick"
+        ],
+        "to": "Patrick van Aanholt"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-dijk-virgil"
+        ],
+        "to": "Virgil van Dijk"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-la-parra-rajiv"
+        ],
+        "to": "Rajiv van La Parra"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "walker-peters-kyle"
+        ],
+        "to": "Kyle Walker-Peters"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "wan-bissaka-aaron"
+        ],
+        "to": "Aaron Wan-Bissaka"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ward-prowse-james"
+        ],
+        "to": "James Ward-Prowse"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-der-hoorn-mike"
+        ],
+        "to": "Mike van der Hoorn"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-dijk-virgil"
+        ],
+        "to": "Virgil van Dijk"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-la-parra-rajiv"
+        ],
+        "to": "Rajiv van La Parra"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "wan-bissaka-aaron"
+        ],
+        "to": "Aaron Wan-Bissaka"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Home Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Home Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ward-prowse-james"
+        ],
+        "to": "James Ward-Prowse"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "alexander-arnold-trent"
+        ],
+        "to": "Trent Alexander-Arnold"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "aubameyang-pierre-emerick"
+        ],
+        "to": "Pierre-Emerick Aubameyang"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "calvert-lewin-dominic"
+        ],
+        "to": "Dominic Calvert-Lewin"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-bruyne-kevin"
+        ],
+        "to": "Kevin De Bruyne"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-gea-david"
+        ],
+        "to": "David de Gea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "calvert-lewin-dominic"
+        ],
+        "to": "Dominic Calvert-Lewin"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-bruyne-kevin"
+        ],
+        "to": "Kevin De Bruyne"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-gea-david"
+        ],
+        "to": "David de Gea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fosu-mensah-timothy"
+        ],
+        "to": "Timothy Fosu-Mensah"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-bruyne-kevin"
+        ],
+        "to": "Kevin De Bruyne"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "de-gea-david"
+        ],
+        "to": "David de Gea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fosu-mensah-timothy"
+        ],
+        "to": "Timothy Fosu-Mensah"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hojbjerg-pierre-emile"
+        ],
+        "to": "Pierre-Emile Højbjerg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fosu-mensah-timothy"
+        ],
+        "to": "Timothy Fosu-Mensah"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hojbjerg-pierre-emile"
+        ],
+        "to": "Pierre-Emile Højbjerg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 4",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 4",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "choupo-moting-maxim"
+        ],
+        "to": "Eric Maxim Choupo-Moting"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hojbjerg-pierre-emile"
+        ],
+        "to": "Pierre-Emile Højbjerg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 5",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 5",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "lee-chung-yong"
+        ],
+        "to": "Lee Chung-yong"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "loftus-cheek-ruben"
+        ],
+        "to": "Ruben Loftus-Cheek"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "maitland-niles-ainsley"
+        ],
+        "to": "Ainsley Maitland-Niles"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "n-koudou-georges-kevin"
+        ],
+        "to": "Georges-Kévin N'Koudou"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 6",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 6",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "maitland-niles-ainsley"
+        ],
+        "to": "Ainsley Maitland-Niles"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 7",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 7",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ki-sung-yong"
+        ],
+        "to": "Ki Sung-yueng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "martins-indi-bruno"
+        ],
+        "to": "Bruno Martins Indi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "robson-kanu-hal"
+        ],
+        "to": "Hal Robson-Kanu"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 8",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 8",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "son-heung-min"
+        ],
+        "to": "Son Heung-min"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxlade-chamberlain-alex"
+        ],
+        "to": "Alex Oxlade-Chamberlain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "robson-kanu-hal"
+        ],
+        "to": "Hal Robson-Kanu"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "son-heung-min"
+        ],
+        "to": "Son Heung-min"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 9",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 9",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-aanholt-patrick"
+        ],
+        "to": "Patrick van Aanholt"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kante-n-golo"
+        ],
+        "to": "N'Golo Kanté"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "robson-kanu-hal"
+        ],
+        "to": "Hal Robson-Kanu"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "son-heung-min"
+        ],
+        "to": "Son Heung-min"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-aanholt-patrick"
+        ],
+        "to": "Patrick van Aanholt"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-dijk-virgil"
+        ],
+        "to": "Virgil van Dijk"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "wan-bissaka-aaron"
+        ],
+        "to": "Aaron Wan-Bissaka"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ward-prowse-james"
+        ],
+        "to": "James Ward-Prowse"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 10",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-la-parra-rajiv"
+        ],
+        "to": "Rajiv van La Parra"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-aanholt-patrick"
+        ],
+        "to": "Patrick van Aanholt"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-der-hoorn-mike"
+        ],
+        "to": "Mike van der Hoorn"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-dijk-virgil"
+        ],
+        "to": "Virgil van Dijk"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "van-la-parra-rajiv"
+        ],
+        "to": "Rajiv van La Parra"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "walker-peters-kyle"
+        ],
+        "to": "Kyle Walker-Peters"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "wan-bissaka-aaron"
+        ],
+        "to": "Aaron Wan-Bissaka"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Away Player 11",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Away Player 11",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ward-prowse-james"
+        ],
+        "to": "James Ward-Prowse"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ArsenalÂ "
+        ],
+        "to": "Arsenal"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BrightonÂ "
+        ],
+        "to": "Brighton"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ChelseaÂ "
+        ],
+        "to": "Chelsea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EvertonÂ "
+        ],
+        "to": "Everton"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HuddersfieldÂ "
+        ],
+        "to": "Huddersfield"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LeicesterÂ "
+        ],
+        "to": "Leicester"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LiverpoolÂ "
+        ],
+        "to": "Liverpool"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manchester CityÂ "
+        ],
+        "to": "Manchester City"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manchester UnitedÂ "
+        ],
+        "to": "Manchester United"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SouthamptonÂ "
+        ],
+        "to": "Southampton"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SwanseaÂ "
+        ],
+        "to": "SwanseaÂ"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SwanseaÂ"
+        ],
+        "to": "Swansea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TottenhamÂ "
+        ],
+        "to": "Tottenham"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WatfordÂ "
+        ],
+        "to": "Watford"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "West BromÂ "
+        ],
+        "to": "West Brom"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 2 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 2 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "West HamÂ "
+        ],
+        "to": "West Ham"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ArsenalÂ "
+        ],
+        "to": "Arsena"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arsena"
+        ],
+        "to": "Arsenal"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BournemouthÂ "
+        ],
+        "to": "Bournemouth"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BrightonÂ "
+        ],
+        "to": "Brighton"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ChelseaÂ "
+        ],
+        "to": "Chelsea"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EvertonÂ "
+        ],
+        "to": "Everton"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HuddersfieldÂ "
+        ],
+        "to": "Huddersfield"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LeicesterÂ "
+        ],
+        "to": "Leicester"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manchester CityÂ "
+        ],
+        "to": "Manchester City"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NewcastleÂ "
+        ],
+        "to": "Newcastle"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "StokeÂ "
+        ],
+        "to": "Stoke"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Team 1 Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Team 1 Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WatfordÂ "
+        ],
+        "to": "Watford"
+      }
+    ]
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Date Official at index 4 based on column Date using expression grel:(value.split(\"/\")[1] + \"/\" + value.split(\"/\")[0] + \"/\" + value.split(\"/\")[2]).toDate()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Date Official",
+    "columnInsertIndex": 4,
+    "baseColumnName": "Date",
+    "expression": "grel:(value.split(\"/\")[1] + \"/\" + value.split(\"/\")[0] + \"/\" + value.split(\"/\")[2]).toDate()",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/row-reorder",
+    "description": "Reorder rows",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "errorPosition": 1,
+          "valueType": "date",
+          "column": "Date Formatted",
+          "blankPosition": 2,
+          "reverse": false
+        },
+        {
+          "errorPosition": 1,
+          "valueType": "date",
+          "column": "Date Official",
+          "blankPosition": 2,
+          "reverse": false
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Date Official",
+    "columnName": "Date Official"
+  }
+]
