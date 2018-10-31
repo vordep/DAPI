@@ -8,7 +8,7 @@ for filename in glob.glob('Refined/*.csv'):
     jsonfile = csvfile + '.json'
 
     with open(csvfile+'.csv') as f:
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(f, delimiter=';')
         rows = list(reader)
 
     with open(jsonfile, 'w') as f:
