@@ -1,17 +1,26 @@
 import json
 import glob
 import ntpath
+import os
 
 for fileName in glob.glob('../Datasets/Refined/*.json'):
 	with open(fileName) as statsJson:
 		jsonFileName = ntpath.basename(fileName)
 		stats = json.load(statsJson)
-		with open('../Commentary Datasets/Refined/' + jsonFileName) as commentaryJson:
-			commentary = json.load(commentaryJson)
-			commentaryJson.close()
-		with open('../LineUpsDataset/Refined/' + jsonFileName) as lineupJson:
-			lineup = json.load(lineupJson)
-			lineupJson.close()
+		if os.path.exists('../Commentary Datasets/Refined/' + jsonFileName):
+			with open('../Commentary Datasets/Refined/' + jsonFileName) as commentaryJson:
+				commentary = json.load(commentaryJson)
+				commentaryJson.close()
+		else:
+			print('../Commentary Datasets/Refined/' + jsonFileName)
+			commentary = []
+		if os.path.exists('../LineUpsDataset/Refined/' + jsonFileName):
+			with open('../LineUpsDataset/Refined/' + jsonFileName) as lineupJson:
+				lineup = json.load(lineupJson)
+				lineupJson.close()
+		else:
+			print('../LineUpsDataset/Refined/' + jsonFileName)
+			lineup = {}
 		game = {}
 		game['Date'] = stats['Date']
 		game['Home Team'] = stats['Home Team']
