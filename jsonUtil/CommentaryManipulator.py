@@ -27,13 +27,14 @@ for fileName in glob.glob('../MergedDataset/Final/Description/*.json'):
         data = json.load(GameJson)
         description = ""
         for comment in data["Commentary"]:
-            sentence = "{0} at minute {1} ".format(comment["Commentary"], comment["Match Time Numeric"])
-            description = description + sentence
+			if comment["Match Time Numeric"].isnumeric():
+				sentence = comment["Commentary"] + " at minute " + comment["Match Time Numeric"] + ". "
+				description = description + sentence
+
 
     # data.append({"Description":description})
     data["Description"] = description
 
     with open(fileName, 'w') as GameJson:
         json.dump(data, GameJson)
-        print(data)
     GameJson.close()
