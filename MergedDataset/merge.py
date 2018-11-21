@@ -2,6 +2,7 @@ import json
 import glob
 import ntpath
 import os
+import codecs
 
 for fileName in glob.glob('../Datasets/Refined/*.json'):
 	with open(fileName) as statsJson:
@@ -29,15 +30,16 @@ for fileName in glob.glob('../Datasets/Refined/*.json'):
 		stats.pop('Home Team')
 		stats.pop('Away Team')
 		for item in commentary:
-			item.pop('Date')
-			item.pop('Team One')
-			item.pop('Team Two')
+			print(item)
+			item.pop(1)
+			item.pop(4)
+			item.pop(5)
 		lineup.pop('Date')
 		lineup.pop('Team 1 Name')
 		lineup.pop('Team 2 Name')
 		game['Stats'] = stats
 		game['Commentary'] = commentary
 		game['Lineup'] = lineup
-		with open('Final/' + jsonFileName, 'w') as mergedFile:
-			json.dump(game, mergedFile)
+		with codecs.open('Final/' + jsonFileName, 'w', encoding='utf-8') as mergedFile:
+			json.dump(game, mergedFile, ensure_ascii=False)
 		statsJson.close()

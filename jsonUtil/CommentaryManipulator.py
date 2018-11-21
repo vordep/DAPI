@@ -3,6 +3,7 @@ import glob
 import ntpath
 import os
 from pprint import pprint
+import codecs
 
 # with open('/home/vordep/Desktop/DAPI/MergedDataset/Final/Full/1.json') as f:
 #     data = json.load(f)
@@ -27,14 +28,15 @@ for fileName in glob.glob('../MergedDataset/Final/Description/*.json'):
         data = json.load(GameJson)
         description = ""
         for comment in data["Commentary"]:
-			if comment["Match Time Numeric"].isnumeric():
-				sentence = comment["Commentary"] + " at minute " + comment["Match Time Numeric"] + ". "
+			
+			if comment[-1].isnumeric():
+				sentence = comment[2] + " at minute " + comment[-1] + ". "
 				description = description + sentence
 
 
     # data.append({"Description":description})
     data["Description"] = description
 
-    with open(fileName, 'w') as GameJson:
-        json.dump(data, GameJson)
+    with codecs.open(fileName, 'w', encoding='utf-8') as GameJson:
+        json.dump(data, GameJson, ensure_ascii=False)
     GameJson.close()
