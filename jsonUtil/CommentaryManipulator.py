@@ -30,7 +30,7 @@ for fileName in glob.glob('../MergedDataset/Final/Description/*.json'):
         for comment in data["Commentary"]:
 			
 			if comment[-1].isnumeric():
-				sentence = comment[2] + " at minute " + comment[-1] + ". "
+				sentence = comment[1] + " at minute " + comment[-1] + ". "
 				description = description + sentence
 
 
