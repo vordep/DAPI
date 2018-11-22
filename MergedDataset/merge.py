@@ -23,14 +23,13 @@ for fileName in glob.glob('../Datasets/Refined/*.json'):
 			print('../LineUpsDataset/Refined/' + jsonFileName)
 			lineup = {}
 		game = {}
-		game['Date'] = stats['Date']
+		game['Date'] = stats['Date'].split('-')[2] + '-' + stats['Date'].split('-')[1] + '-' + stats['Date'].split('-')[0]
 		game['Home Team'] = stats['Home Team']
 		game['Away Team'] = stats['Away Team']
 		stats.pop('Date')
 		stats.pop('Home Team')
 		stats.pop('Away Team')
 		for item in commentary:
-			print(item)
 			item.pop(1)
 			item.pop(4)
 			item.pop(5)
