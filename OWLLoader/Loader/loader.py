@@ -4,6 +4,7 @@ import ntpath
 import os
 import codecs
 import re
+import rdflib
 from Loader import OWLBuilder
 
 players = set()
@@ -36,4 +37,5 @@ for fileName in glob.glob('../Description/*.json'):
 
 # print(teams)
 # print(players)
-OWLBuilder.add_teams_to_owl(teams)
+owlpath = '../ontology/ontology.owl'
+OWLBuilder.load_owl(owlpath)
