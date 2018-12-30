@@ -36,7 +36,7 @@ def main():
 
 
 
-                    # print(teams)
+    # print(teams)
     # print(players)
 
     for team in teams:
@@ -48,15 +48,22 @@ def main():
     # Add Exhibition of Players
     for fileName in glob.glob('../Description/*.json'):
         with open(fileName) as matchjson:
+
+            match = json.load(matchjson)
             lineup = match['Lineup']
+            exhibitions = []
             for player in lineup:
                 if re.search('Home Player', player) is not None:
-                    builder.add_exhibition(match['Home Team'],lineup[player],match['Date'])
+                    exhibition = builder.add_exhibition(match['Home Team'],lineup[player],match['Date'])
+                    exhibitions.append(exhibition)
                 elif re.search('Away Player', player) is not None:
-                    builder.add_exhibition(match['Away Team'],lineup[player],match['Date'])
+                    exhibition = builder.add_exhibition(match['Away Team'],lineup[player],match['Date'])
+                    exhibitions.append(exhibition)
 
                 else:
                     pass
+
+            builder.add_match(match['Home Team'],match['Away Team'],exhibitions,match['Date'])
 
 
 
