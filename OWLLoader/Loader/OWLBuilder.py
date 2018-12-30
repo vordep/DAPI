@@ -1,19 +1,38 @@
-from owlready2 import *
+from Loader.Ontology import *
 
 
-# TODO
-# Change path for the script to work
-# onto_path.append('file:///home/vordep/Desktop/DAPI/Ontology/ontology.owl').load()
-# print(onto_path)
-def load_owl(path):
-    print(path)
+def add_team(team):
+    team = "_".join(team.split())
+    # print(team)
+    return Team(team, namespace=ontology)
 
-    onto_path.append('file:///home/vordep/Desktop/DAPI/Ontology/ontology.owl')
-    print(onto_path)
-    ontology = get_ontology('file:///home/vordep/Desktop/DAPI/Ontology/ontology.owl').load()
-    onto = get_ontology("http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl").load()
-    print(list(ontology.classes()))
-    print(list(onto.classes()))
 
-def add_teams_to_owl(teams):
-    pass
+def add_player(player):
+    player = "_".join(player.split())
+    # print(player)
+    return Player(player, namespace=ontology)
+
+def save(file_name):
+    ontology.save(file=file_name, format='rdfxml')
+
+#TODO Test this code
+def add_exhibition(team, player, date):
+    team = "_".join(team.split())
+    player = "_".join(player.split())
+    # print('team :' +team)
+    # print('player:'+player)
+    # print('date:'+date)
+    title = player + '_' + date
+    print(title)
+    # new exhibition
+    player = add_player(player)
+    team = add_team(team)
+    print (team)
+    exhibition = Exhibition(title,namespace=ontology)
+    exhibition.hasTeam = team
+    exhibition.hasPlayer = player
+    # for i in Player.instances():
+    #     print(i)
+
+
+
