@@ -66,7 +66,7 @@ def add_event(event,home,away,date):
         # print('half_end '+event[5])
         # print('match_end '+event[6])
         # print('half_begins '+event[7])
-        print('shot_attempt '+event[8])
+        # print('shot_attempt '+event[8])
         # print('penalty_shot '+event[9])
         # print('shot_result'+event[10])
         # print('shot_by_player'+event[11])
@@ -118,6 +118,15 @@ def add_event(event,home,away,date):
         # print('team_one_penalty_score '+event[60])
         # print('team_two_penalty_score '+event[61])
         # print('match_time_numeric '+event[62])
+
         if int(event[17]) == 1 :
             print('foul')
+            title = 'foul' + title
             foul = Foul(title,namespace=ontology)
+            return foul
+        elif int(event[8]) == 1 :
+            print('shot attempt')
+            title = 'shot' + title
+            shot = Shot(title,namespace=ontology)
+            return shot
+
