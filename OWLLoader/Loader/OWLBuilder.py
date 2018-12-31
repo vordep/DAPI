@@ -51,7 +51,12 @@ def add_match(home,away,exhibitions,date):
 
     print(match)
 
-def add_event(event):
+def add_event(event,home,away,date):
+        home = "_".join(home.split())
+        away = "_".join(away.split())
+        minute = event[2]
+        print(minute.replace("'", "-").split("-"))
+        title = 'event '+ '_' + home + '_' + away + '_' + date
 
         # print('id '+event[0])
         # print('comment '+event[1])
@@ -115,4 +120,4 @@ def add_event(event):
         # print('match_time_numeric '+event[62])
         if int(event[17]) == 1 :
             print('foul')
-            foul = Foul()
+            foul = Foul(title,namespace=ontology)
