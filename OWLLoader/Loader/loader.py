@@ -3,10 +3,10 @@ import glob
 import ntpath
 from Loader import OWLBuilder as builder
 from owlready2 import *
+
 players = set()
 teams = set()
 lineup = {}
-
 
 
 def main():
@@ -34,8 +34,6 @@ def main():
                     if lineup[player] not in players:
                         players.add(lineup[player])
 
-
-
     # print(teams)
     # print(players)
 
@@ -54,21 +52,23 @@ def main():
             exhibitions = []
             for player in lineup:
                 if re.search('Home Player', player) is not None:
-                    exhibition = builder.add_exhibition(match['Home Team'],lineup[player],match['Date'])
+                    exhibition = builder.add_exhibition(match['Home Team'], lineup[player], match['Date'])
                     exhibitions.append(exhibition)
                 elif re.search('Away Player', player) is not None:
-                    exhibition = builder.add_exhibition(match['Away Team'],lineup[player],match['Date'])
+                    exhibition = builder.add_exhibition(match['Away Team'], lineup[player], match['Date'])
                     exhibitions.append(exhibition)
 
                 else:
                     pass
 
-            builder.add_match(match['Home Team'],match['Away Team'],exhibitions,match['Date'])
+            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, match['Date'])
+            for match_comment in match["Commentary"]:
+                builder.add_event(match_comment)
+                # print(match_comment)
 
 
-
-    # builder.add_exhibition(match)
+# builder.add_exhibition(match)
     builder.save('ontology.xml')
-
+#     print(match)
 if __name__ == '__main__':
     main()

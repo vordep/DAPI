@@ -77,3 +77,6 @@ with ontology:
     class hasTeam(ObjectProperty):
         domain = [Exhibition]
         range = [Team]
+
+
+

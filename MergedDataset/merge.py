@@ -30,9 +30,9 @@ for fileName in glob.glob('../Datasets/Refined/*.json'):
 		stats.pop('Home Team')
 		stats.pop('Away Team')
 		for item in commentary:
-			item.pop(1)
 			item.pop(4)
-			item.pop(5)
+			item.pop(4)
+			item.pop(1	)
 		lineup.pop('Date')
 		lineup.pop('Team 1 Name')
 		lineup.pop('Team 2 Name')
