@@ -39,7 +39,20 @@ with ontology:
     class Goal(Event):
         pass
 
-
+    class Assist(Event):
+        pass
+    class Card(Event):
+            pass
+    class Delay(Event):
+            pass
+    class Offside(Event):
+            pass
+    class Substituition(Event):
+            pass
+    class VideoReview(Event):
+            pass
+    class Corner(Event):
+            pass
     class Shot(Event):
         pass
 
