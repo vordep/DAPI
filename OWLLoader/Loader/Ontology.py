@@ -74,11 +74,11 @@ with ontology:
         range = [str]
 
 
-    class becausePlayerInjured(DataProperty):
+    class becausePlayerInjured(DataProperty,FunctionalProperty):
         range = [bool]
 
 
-    class hasAssistType(DataProperty):
+    class hasAssistType(DataProperty,FunctionalProperty):
         range = [str]
 
 
@@ -114,7 +114,7 @@ with ontology:
         range = []
 
 
-    class hasCardType(DataProperty):
+    class hasCardType(DataProperty,FunctionalProperty):
         range = [str]
 
 
@@ -170,11 +170,11 @@ with ontology:
         range = [int]
 
 
-    class hasLocation(DataProperty):
+    class hasLocation(DataProperty, FunctionalProperty):
         range = [str]
 
 
-    class hasNetLocation(DataProperty):
+    class hasNetLocation(DataProperty, FunctionalProperty):
         range = [str]
 
 
@@ -182,7 +182,7 @@ with ontology:
         range = [str]
 
 
-    class hasResult(DataProperty):
+    class hasResult(DataProperty, FunctionalProperty):
         range = [str]
 
 
@@ -222,7 +222,7 @@ with ontology:
         range = [bool]
 
 
-    class withFoot(DataProperty):
+    class withFoot(DataProperty, FunctionalProperty):
         range = [str]
 
 
@@ -331,3 +331,57 @@ with ontology:
 
     class hasAssistingPlayer(Assist >> Player):
         pass
+# print('id ' + event[0])
+# print('comment ' + event[1])
+# print('match_time ' + event[2])
+# print('team_one_score ' + event[3])
+# print('team_two_socre ' + event[4])
+# print('half_end ' + event[5])
+# print('match_end ' + event[6])
+# print('half_begins ' + event[7])
+# print('shot_result' + event[10])
+# print('shot_with ' + event[13])
+# print('shot_where ' + event[14])
+# print('net_location ' + event[15])
+# print('foul ' + event[17])
+# print('foul_by_player ' + event[18])
+# print('foul_by_team ' + event[19])
+# print('follow_set_piece ' + event[20])
+# print('assist_type ' + event[21])
+# print('follow_corner ' + event[22])
+# print('offside' + event[23])
+# print('offside_team ' + event[24])
+# print('offside_player ' + event[25])
+# print('offside_pass_from ' + event[26])
+# print('shown_card ' + event[27])
+# print('casd_type ' + event[28])
+# print('card_player ' + event[29])
+# print('card_team ' + event[30])
+# print('video_review ' + event[31])
+# print('video_review_event ' + event[32])
+# print('video_review_result ' + event[33])
+# print('delay_in_match ' + event[34])
+# print('delay_team ' + event[35])
+# print('free_kick_won ' + event[36])
+# print('corner ' + event[37])
+# print('corner_team ' + event[38])
+# print('corner_conceded_by ' + event[39])
+# print('substitution ' + event[40])
+# print('free_kick_player ' + event[41])
+# print('free_kick_team ' + event[42])
+# print('free_kick_where ' + event[43])
+# print('sub_injury ' + event[44])
+# print('sub_team ' + event[45])
+# print('sub_player ' + event[46])
+# print('replaced_player ' + event[47])
+# print('penalty ' + event[48])
+# print('team_drew_penalty ' + event[49])
+# print('player_drew_penalty ' + event[50])
+# print('player_conceded_penalty ' + event[51])
+# print('team_conceded_penalty ' + event[52])
+# print('half ' + event[53])
+# print('comment_id ' + event[54])
+# print('stoppage_time ' + event[55])
+# print('team_one_penalty_score ' + event[56])
+# print('team_two_penalty_score ' + event[57])
+# print('match_time_numeric ' + event[58])

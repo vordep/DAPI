@@ -65,10 +65,11 @@ def main():
             for match_comment in match["Commentary"]:
                 event = builder.add_event(match_comment,match['Home Team'],match['Away Team'],match['Date'])
                 events.append(event)
-                print(event)
-                print(match_comment)
+                # print(event)
+                # print(match_comment)
+            stats = match['Stats']
 
-            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions,events, match['Date'])
+            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, events,stats, match['Date'])
 
 
 # builder.add_exhibition(match)
