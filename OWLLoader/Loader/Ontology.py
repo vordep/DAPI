@@ -11,7 +11,6 @@ except FileNotFoundError:
 with ontology:
     # Classes
 
-
     class Team(Thing):
         pass
 
@@ -36,23 +35,34 @@ with ontology:
         pass
 
 
-    class Goal(Event):
-        pass
-
     class Assist(Event):
         pass
+
+
     class Card(Event):
-            pass
+        pass
+
+
     class Delay(Event):
-            pass
+        pass
+
+
     class Offside(Event):
-            pass
+        pass
+
+
     class Substituition(Event):
-            pass
+        pass
+
+
     class VideoReview(Event):
-            pass
+        pass
+
+
     class Corner(Event):
-            pass
+        pass
+
+
     class Shot(Event):
         pass
 
@@ -64,8 +74,159 @@ with ontology:
         range = [str]
 
 
-    # Object Properties
+    class becausePlayerInjured(DataProperty):
+        range = [bool]
 
+
+    class hasAssistType(DataProperty):
+        range = [str]
+
+
+    class hasAwayTeamCorners(DataProperty):
+        range = [int]
+
+
+    class hasAwayTeamFouls(DataProperty):
+        range = [int]
+
+
+    class hasAwayTeamFullTimeGoals(DataProperty):
+        range = [int]
+
+
+    class hasAwayTeamHalfTimeGoals(DataProperty):
+        range = [int]
+
+
+    class hasAwayTeamRedCards(DataProperty):
+        range = [int]
+
+
+    class hasAwayTeamShots(DataProperty):
+        range = [int]
+
+
+    class hasAwayTeamShotsOnTarget(DataProperty):
+        range = []
+
+
+    class hasAwayTeamYellowCards(DataProperty):
+        range = []
+
+
+    class hasCardType(DataProperty):
+        range = [str]
+
+
+    class hasDelayEvent(DataProperty):
+        range = [str]
+
+
+    class hasDelayResult(DataProperty):
+        range = [str]
+
+
+    class hasDescription(DataProperty):
+        range = [str]
+
+
+    class hasEndMinute(DataProperty):
+        range = [int]
+
+
+    class hasFreeKickLocation(DataProperty):
+        range = [str]
+
+
+    class hasHomeTeamCorners(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamFouls(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamFullTimeGoals(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamHalfTimeGoals(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamRedCards(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamShots(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamShotsOnTarget(DataProperty):
+        range = [int]
+
+
+    class hasHomeTeamYellowCards(DataProperty):
+        range = [int]
+
+
+    class hasLocation(DataProperty):
+        range = [str]
+
+
+    class hasNetLocation(DataProperty):
+        range = [str]
+
+
+    class hasReferee(DataProperty):
+        range = [str]
+
+
+    class hasResult(DataProperty):
+        range = [str]
+
+
+    class hasStartMinute(DataProperty):
+        range = [int]
+
+
+    class hasVideoReviewEvent(DataProperty):
+        range = [str]
+
+
+    class hasVideoReviewResult(DataProperty):
+        range = [str]
+
+
+    class isPenaltyShot(DataProperty):
+        range = [bool]
+
+
+    class occuredAtMinute(DataProperty):
+        range = [int]
+
+
+    class wasFollowedByCorner(DataProperty):
+        range = [bool]
+
+
+    class wasFollowedBySetPiece(DataProperty):
+        range = [bool]
+
+
+    class wasFreeKickWon(DataProperty):
+        range = [bool]
+
+
+    class wasPenaltyKickWon(DataProperty):
+        range = [bool]
+
+
+    class withFoot(DataProperty):
+        range = [str]
+
+
+    # Object Properties
 
     class hasAwayTeam(ObjectProperty):
         domain = [Match]
@@ -92,4 +253,81 @@ with ontology:
         range = [Team]
 
 
+    class hasEvent(Match >> Event):
+        pass
 
+
+    class hasAwayTeam(Match >> Team):
+        pass
+
+
+    class hasReplacedPlayer(Substituition >> Player):
+        pass
+
+
+    class wasPerformedByTeam(Substituition >> Team):
+        pass
+
+
+    class hasEnteringPlayer(Substituition >> Player):
+        pass
+
+
+    class followedByAssist(Shot >> Assist):
+        pass
+
+
+    class hasShootingPlayer(Shot >> Player):
+        pass
+
+
+    class hasShootingTeam(Shot >> Team):
+        pass
+
+
+    class wasFollowedByPassFrom(Offside >> Player):
+        pass
+
+
+    class wasFromTeam(Offside >> Team):
+        pass
+
+
+    class hasOffsidePlayer(Offside >> Player):
+        pass
+
+
+    class wasGivenToPlayer(Card >> Player):
+        pass
+
+
+    class wasGivenToTeam(Card >> Team):
+        pass
+
+
+    class wasWonByPlayer(Foul >> Player):
+        pass
+
+
+    class wasWonByTeam(Foul >> Team):
+        pass
+
+
+    class wasCommitedByPlayer(Foul >> Player):
+        pass
+
+
+    class wasCommitedByTeam(Foul >> Team):
+        pass
+
+
+    class WonByTeam(Corner >> Team):
+        pass
+
+
+    class concededByPlayer(Corner >> Player):
+        pass
+
+
+    class hasAssistingPlayer(Assist >> Player):
+        pass

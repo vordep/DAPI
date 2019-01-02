@@ -52,7 +52,7 @@ def add_match(home, away, exhibitions, date):
     match.hasHomeTeam = team1
     match.hasAwayTeam = team2
     match.hasExhibition = exhibitions
-    match.hasDate = [date]
+    match.hasDate = date
 
     print(match)
 
@@ -61,9 +61,9 @@ def add_event(event, home, away, date):
     home = "_".join(home.split())
     away = "_".join(away.split())
     minute = event[2]
-    # print(minute.replace("'", "-").split("-"))
-    title = 'event' + '_' + home + '_' + away + '_' + date
-
+    minute.replace("'", "-").split("-")
+    title = 'event' + '_' + minute[0] + '_' + home + '_' + away + '_' + date
+    print(title )
     # print('id '+event[0])
     # print('comment '+event[1])
     # print('match_time '+event[2])
@@ -127,25 +127,46 @@ def add_event(event, home, away, date):
 
     if int(event[17]) == 1:
         # print('foul')
+        print(event)
         title = 'foul_' + title
         foul = Foul(title, namespace=ontology)
+        # Data Properties
+
+        # Object Properties
+        #
         return foul
     elif int(event[8]) == 1:
         # print('shot attempt')
         title = 'shot_' + title
         shot = Shot(title, namespace=ontology)
-        return shot
 
-    # print('assist_by_player ' + event[16])
-    elif event[16] != 'NA':
-        title = 'assist_' + title
-        assist = Assist(title, namespace=ontology)
-        return assist
+        player = add_player(event[11])
+        team = add_team(event[12])
+
+        shot.hasShootingPlayer = player
+        shot.hasShootingTeam = team
+        if event[16] != 'NA':
+            title = 'assist_' + title
+            assist = Assist(title, namespace=ontology)
+            player = add_player(event[16])
+            assist.hasAssistingPlayer = player
+            shot.followedByAssist = assist
+        return shot
 
     # print('offside'+event[23])
     elif int(event[23]) == 1:
         title = 'offside_' + title
         offside = Offside(title, namespace=ontology)
+        team = add_team(event[24])
+        player1 = add_player(event[25])
+        player2 = add_player(event[26])
+        offside.wasFromTeam = team
+        offside.hasOffsidePlayer= player1
+        offside.wasFollowedByPassFrom= player2
+
+
+
+
         return offside
 
     # print('shown_card '+event[27])
@@ -153,8 +174,14 @@ def add_event(event, home, away, date):
         print('card')
         title = 'card_' + title
         card = Card(title, namespace=ontology)
-        return card
+        team = add_team(event[30])
+        player = add_player(event[29])
 
+        card.wasGivenToPlayer = player
+        card.wasGivenToTeam = team
+        return card
+    # print('card_player '+event[29])
+    # print('card_team '+event[30])
 
     # print('video_review ' + event[31])
     elif int(event[31]) == 1:
@@ -162,6 +189,7 @@ def add_event(event, home, away, date):
         print('video_review')
         title = 'video_review_' + title
         video_review = VideoReview(title, namespace=ontology)
+
         return video_review
 
     # print('delay_in_match ' + event[34])
@@ -169,18 +197,32 @@ def add_event(event, home, away, date):
         print('delay_in_match')
         title = 'delay_in_match' + title
         delay = Delay(title, namespace=ontology)
+        team =add_team(event[35])
+        # print('delay_in_match '+event[34])
+        delay.causedByTeam = team
+
         return delay
     # print('corner ' + event[37])
     elif event[37] != 'NA':
         print('corner')
         title = 'corner' + title
         corner = Corner(title, namespace=ontology)
+        team = add_team(event[38])
+        player = add_player(event[39])
+        corner.wonByTeam = team
+        corner.concededByPlayer = player
         return corner
-    # print('substitution ' + event[40])
+
     elif int(event[40]) == 1:
         print('substitution')
         title = 'substitution' + title
+        team = add_team(event[49])
+        player1 = add_player(event[50])
+        player2 = add_player(event[51])
         substitution = Substituition(title, namespace=ontology)
+        substitution.wasPerformedByTeam = team
+        substitution.hasEnteringPlayer = player1
+        substitution.hasReplacedPlayer = player2
         return substitution
     else:
         event = Event()
