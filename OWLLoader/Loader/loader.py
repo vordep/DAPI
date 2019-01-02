@@ -50,6 +50,7 @@ def main():
             match = json.load(matchjson)
             lineup = match['Lineup']
             exhibitions = []
+            events = []
             for player in lineup:
                 if re.search('Home Player', player) is not None:
                     exhibition = builder.add_exhibition(match['Home Team'], lineup[player], match['Date'])
@@ -61,10 +62,13 @@ def main():
                 else:
                     pass
 
-            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, match['Date'])
             for match_comment in match["Commentary"]:
                 event = builder.add_event(match_comment,match['Home Team'],match['Away Team'],match['Date'])
+                events.append(event)
                 print(event)
+                print(match_comment)
+
+            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions,events, match['Date'])
 
 
 # builder.add_exhibition(match)

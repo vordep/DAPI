@@ -32,7 +32,8 @@ for fileName in glob.glob('../Datasets/Refined/*.json'):
 		for item in commentary:
 			item.pop(4)
 			item.pop(4)
-			item.pop(1	)
+			item.pop(3)
+		print(commentary)
 		lineup.pop('Date')
 		lineup.pop('Team 1 Name')
 		lineup.pop('Team 2 Name')

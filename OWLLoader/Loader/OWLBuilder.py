@@ -40,7 +40,7 @@ def add_exhibition(team, player, date):
     return exhibition
 
 
-def add_match(home, away, exhibitions, date):
+def add_match(home, away, exhibitions,events, date):
     home = "_".join(home.split())
     away = "_".join(away.split())
 
@@ -53,79 +53,81 @@ def add_match(home, away, exhibitions, date):
     match.hasAwayTeam = team2
     match.hasExhibition = exhibitions
     match.hasDate = date
-
+    match.hasEvent = events
     print(match)
 
 
 def add_event(event, home, away, date):
     home = "_".join(home.split())
     away = "_".join(away.split())
+    match_name  =  date + '_' + home + '_' + away
+    match_clone = Match(match_name,namespace=ontology)
     minute = event[2]
     minute.replace("'", "-").split("-")
     title = 'event' + '_' + minute[0] + '_' + home + '_' + away + '_' + date
     print(title )
-    # print('id '+event[0])
-    # print('comment '+event[1])
-    # print('match_time '+event[2])
-    # print('team_one_score '+event[3])
-    # print('team_two_socre '+event[4])
-    # print('half_end '+event[5])
-    # print('match_end '+event[6])
-    # print('half_begins '+event[7])
-    # print('shot_attempt '+event[8])
-    # print('penalty_shot '+event[9])
-    # print('shot_result'+event[10])
-    # print('shot_by_player'+event[11])
-    # print('shot_by_team '+event[12])
-    # print('shot_with '+event[13])
-    # print('shot_where '+event[14])
-    # print('net_location '+event[15])
-    # print('assist_by_player '+event[16])
-    # print('foul '+event[17])
-    # print('foul_by_player '+event[18])
-    # print('foul_by_team '+event[19])
-    # print('follow_set_piece '+event[20])
-    # print('assist_type '+event[21])
-    # print('follow_corner '+event[22])
-    # print('offside'+event[23])
-    # print('offside_team '+event[24])
-    # print('offside_player '+event[25])
-    # print('offside_pass_from '+event[26])
-    # print('shown_card '+event[27])
-    # print('casrd_type '+event[28])
-    # print('card_player '+event[29])
-    # print('card_team '+event[30])
-    # print('video_review '+event[31])
-    # print('video_review_event '+event[32])
-    # print('video_review_result '+event[33])
-    # print('delay_in_match '+event[34])
-    # print('delay_team '+event[35])
-    # print('free_kick_won '+event[36])
-    # print('corner '+event[37])
-    # print('corner_team '+event[38])
-    # print('corner_conceded_by '+event[39])
-    # print('substitution '+event[40])
-    # print('free_kick_player '+event[41])
-    # print('free_kick_team '+event[42])
-    # print('free_kick_where '+event[43])
-    # print('sub_injury '+event[48])
-    # print('sub_team '+event[49])
-    # print('sub_player '+event[50])
-    # print('replaced_player '+event[51])
-    # print('penalty '+event[52])
-    # print('team_drew_penalty '+event[53])
-    # print('player_drew_penalty '+event[54])
-    # print('player_conceded_penalty '+event[55])
-    # print('team_conceded_penalty '+event[56])
-    # print('half '+event[57])
-    # print('comment_id '+event[58])
+    print('id '+event[0])
+    print('comment '+event[1])
+    print('match_time '+event[2])
+    print('team_one_score '+event[3])
+    print('team_two_socre '+event[4])
+    print('half_end '+event[5])
+    print('match_end '+event[6])
+    print('half_begins '+event[7])
+    print('shot_attempt '+event[8])
+    print('penalty_shot '+event[9])
+    print('shot_result'+event[10])
+    print('shot_by_player'+event[11])
+    print('shot_by_team '+event[12])
+    print('shot_with '+event[13])
+    print('shot_where '+event[14])
+    print('net_location '+event[15])
+    print('assist_by_player '+event[16])
+    print('foul '+event[17])
+    print('foul_by_player '+event[18])
+    print('foul_by_team '+event[19])
+    print('follow_set_piece '+event[20])
+    print('assist_type '+event[21])
+    print('follow_corner '+event[22])
+    print('offside'+event[23])
+    print('offside_team '+event[24])
+    print('offside_player '+event[25])
+    print('offside_pass_from '+event[26])
+    print('shown_card '+event[27])
+    print('casrd_type '+event[28])
+    print('card_player '+event[29])
+    print('card_team '+event[30])
+    print('video_review '+event[31])
+    print('video_review_event '+event[32])
+    print('video_review_result '+event[33])
+    print('delay_in_match '+event[34])
+    print('delay_team '+event[35])
+    print('free_kick_won '+event[36])
+    print('corner '+event[37])
+    print('corner_team '+event[38])
+    print('corner_conceded_by '+event[39])
+    print('substitution '+event[40])
+    print('free_kick_player '+event[41])
+    print('free_kick_team '+event[42])
+    print('free_kick_where '+event[43])
+    print('sub_injury '+event[44])
+    print('sub_team '+event[45])
+    print('sub_player '+event[46])
+    print('replaced_player '+event[47])
+    print('penalty '+event[48])
+    print('team_drew_penalty '+event[49])
+    print('player_drew_penalty '+event[50])
+    print('player_conceded_penalty '+event[51])
+    print('team_conceded_penalty '+event[52])
+    print('half '+event[53])
+    print('comment_id '+event[54])
     # # this dont work why
-    # print('stoppage_time '+events[59])
-    # print('team_one_penalty_score '+event[60])
-    # print('team_two_penalty_score '+event[61])
-    # print('match_time_numeric '+event[62])
+    print('stoppage_time '+event[55])
+    print('team_one_penalty_score '+event[56])
+    print('team_two_penalty_score '+event[57])
+    print('match_time_numeric '+event[58])
 
-    if int(event[17]) == 1:
+    if int(event[17]) != 'NA':
         # print('foul')
         print(event)
         title = 'foul_' + title
@@ -139,6 +141,10 @@ def add_event(event, home, away, date):
         # print('shot attempt')
         title = 'shot_' + title
         shot = Shot(title, namespace=ontology)
+        if int(event[9]) == 1:
+            shot.isPenaltyShot = bool(1)
+
+
 
         player = add_player(event[11])
         team = add_team(event[12])
@@ -225,5 +231,6 @@ def add_event(event, home, away, date):
         substitution.hasReplacedPlayer = player2
         return substitution
     else:
+
         event = Event()
         return event
