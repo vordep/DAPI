@@ -55,11 +55,12 @@ def main():
                 if re.search('Home Player', player) is not None:
                     exhibition = builder.add_exhibition(match['Home Team'], lineup[player], match['Date'])
                     exhibitions.append(exhibition)
+                    exhibition.hasStartMinute = 0
                 elif re.search('Away Player', player) is not None:
                     exhibition = builder.add_exhibition(match['Away Team'], lineup[player], match['Date'])
                     exhibitions.append(exhibition)
-
-                else:
+                    exhibition.hasStartMinute = 0
+            else:
                     pass
 
             for match_comment in match["Commentary"]:
@@ -67,10 +68,13 @@ def main():
                 events.append(event)
                 # print(event)
                 # print(match_comment)
+                minute = match_comment[58]
             stats = match['Stats']
 
             m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, events,stats, match['Date'])
-
+            for exi in exhibitions:
+                if exi.hasEndMinute is None:
+                    exi.hasEndMinute = minute
 
 # builder.add_exhibition(match)
     builder.save('ontology.xml')

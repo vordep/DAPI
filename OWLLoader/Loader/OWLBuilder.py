@@ -89,7 +89,7 @@ def add_event(event, home, away, date):
         new_event = Foul(title, namespace=ontology)
 
     elif int(event[8]) == 1:
-        print('shot attempt')
+        # print('shot attempt')
         title = 'shot_' + title
         new_event = Shot(title, namespace=ontology)
         penalty = bool(0)
@@ -130,7 +130,7 @@ def add_event(event, home, away, date):
 
     # print('shown_card '+event[27])
     elif int(event[27]) == 1:
-        print('card')
+        # print('card')
         title = 'card_' + title
         new_event = Card(title, namespace=ontology)
         team = add_team(event[30])
@@ -142,7 +142,7 @@ def add_event(event, home, away, date):
 
     elif int(event[31]) == 1:
 
-        print('video_review')
+        # print('video_review')
         title = 'video_review_' + title
         new_event = VideoReview(title, namespace=ontology)
         new_event.hasVideoReviewEvent = event[32]
@@ -153,13 +153,13 @@ def add_event(event, home, away, date):
         title = 'delay_in_match' + title
         new_event = Delay(title, namespace=ontology)
         team = add_team(event[35])
-        print('delay_in_match '+event[34])
-        print('delay_team '+event[35])
+        # print('delay_in_match '+event[34])
+        # print('delay_team '+event[35])
         new_event.causedByTeam = team
 
     # print('corner ' + event[37])
     elif event[37] != 'NA':
-        print('corner')
+        # print('corner')
         title = 'corner' + title
         new_event = Corner(title, namespace=ontology)
         team = add_team(event[38])
@@ -167,7 +167,7 @@ def add_event(event, home, away, date):
         new_event.wonByTeam = team
         new_event.concededByPlayer = player
 
-    elif int(event[40]) == 1:
+    elif int(event[44]) == 1:
         print('substitution')
         title = 'substitution' + title
         team = add_team(event[45])
@@ -176,7 +176,15 @@ def add_event(event, home, away, date):
         injury = bool(0)
         if int(event[44]) == 1:
             injury = bool(1)
+        print(event[45])
+        print(event[45])
+        print(event[46])
+        print(event[47])
+        exi = add_exhibition(event[45],event[46],date)
+        exi.hasEndMinute = event[58]
 
+        exi =add_exhibition(event[45], event[47], date)
+        exi.hasStartMinute= event[58]
         new_event = Substituition(title, namespace=ontology)
         new_event.wasPerformedByTeam = team
         new_event.hasEnteringPlayer = player1
