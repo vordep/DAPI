@@ -44,7 +44,7 @@ def main():
 
     for player in players:
         builder.add_player(player)
-
+    i = 1
     # Add Exhibition of Players
     for fileName in glob.glob('../Description/*.json'):
         with open(fileName) as matchjson:
@@ -80,7 +80,10 @@ def main():
             for exi in exhibitions:
                 if exi.hasEndMinute is None:
                     exi.hasEndMinute = minute
-
+            if i == 100:
+                break
+            i += 1
+            print(i)
     # builder.add_exhibition(match)
     builder.save('ontology.xml')
 
