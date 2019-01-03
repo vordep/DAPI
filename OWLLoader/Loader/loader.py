@@ -4,6 +4,8 @@ import ntpath
 from Loader import OWLBuilder as builder
 from owlready2 import *
 
+from Loader.Ontology import Foul
+
 players = set()
 teams = set()
 lineup = {}
@@ -61,23 +63,28 @@ def main():
                     exhibitions.append(exhibition)
                     exhibition.hasStartMinute = 0
             else:
-                    pass
-
+                pass
+            previous = None
             for match_comment in match["Commentary"]:
-                event = builder.add_event(match_comment,match['Home Team'],match['Away Team'],match['Date'])
+                event = builder.add_event(match_comment, match['Home Team'], match['Away Team'], match['Date'],previous)
                 events.append(event)
                 # print(event)
                 # print(match_comment)
+                previous = event
+
+                # print(previous)
                 minute = match_comment[58]
             stats = match['Stats']
 
-            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, events,stats, match['Date'])
+            m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, events, stats, match['Date'])
             for exi in exhibitions:
                 if exi.hasEndMinute is None:
                     exi.hasEndMinute = minute
 
-# builder.add_exhibition(match)
+    # builder.add_exhibition(match)
     builder.save('ontology.xml')
+
+
 #     print(match)
 if __name__ == '__main__':
     main()

@@ -51,7 +51,7 @@ with ontology:
         pass
 
 
-    class Substituition(Event):
+    class Substitution(Event):
         pass
 
 
@@ -74,11 +74,11 @@ with ontology:
         range = [str]
 
 
-    class becausePlayerInjured(DataProperty,FunctionalProperty):
+    class becausePlayerInjured(DataProperty):
         range = [bool]
 
 
-    class hasAssistType(DataProperty,FunctionalProperty):
+    class hasAssistType(DataProperty):
         range = [str]
 
 
@@ -114,7 +114,7 @@ with ontology:
         range = []
 
 
-    class hasCardType(DataProperty,FunctionalProperty):
+    class hasCardType(DataProperty):
         range = [str]
 
 
@@ -170,11 +170,11 @@ with ontology:
         range = [int]
 
 
-    class hasLocation(DataProperty, FunctionalProperty):
+    class hasLocation(DataProperty):
         range = [str]
 
 
-    class hasNetLocation(DataProperty, FunctionalProperty):
+    class hasNetLocation(DataProperty):
         range = [str]
 
 
@@ -182,7 +182,7 @@ with ontology:
         range = [str]
 
 
-    class hasResult(DataProperty, FunctionalProperty):
+    class hasResult(DataProperty):
         range = [str]
 
 
@@ -222,7 +222,7 @@ with ontology:
         range = [bool]
 
 
-    class withFoot(DataProperty, FunctionalProperty):
+    class withFoot(DataProperty):
         range = [str]
 
 
@@ -261,15 +261,15 @@ with ontology:
         pass
 
 
-    class hasReplacedPlayer(Substituition >> Player):
+    class hasReplacedPlayer(Substitution >> Player):
         pass
 
 
-    class wasPerformedByTeam(Substituition >> Team):
+    class wasPerformedByTeam(Substitution >> Team):
         pass
 
 
-    class hasEnteringPlayer(Substituition >> Player):
+    class hasEnteringPlayer(Substitution >> Player):
         pass
 
 
@@ -339,10 +339,15 @@ with ontology:
 # print('half_end ' + event[5])
 # print('match_end ' + event[6])
 # print('half_begins ' + event[7])
+# print('shot_attempt ' + event[8])
+# print('penalty_shot ' + event[9])
 # print('shot_result' + event[10])
+# print('shot_by_player' + event[11])
+# print('shot_by_team ' + event[12])
 # print('shot_with ' + event[13])
 # print('shot_where ' + event[14])
 # print('net_location ' + event[15])
+# print('assist_by_player ' + event[16])
 # print('foul ' + event[17])
 # print('foul_by_player ' + event[18])
 # print('foul_by_team ' + event[19])
@@ -354,7 +359,7 @@ with ontology:
 # print('offside_player ' + event[25])
 # print('offside_pass_from ' + event[26])
 # print('shown_card ' + event[27])
-# print('casd_type ' + event[28])
+# print('casrd_type ' + event[28])
 # print('card_player ' + event[29])
 # print('card_team ' + event[30])
 # print('video_review ' + event[31])
@@ -363,13 +368,13 @@ with ontology:
 # print('delay_in_match ' + event[34])
 # print('delay_team ' + event[35])
 # print('free_kick_won ' + event[36])
-# print('corner ' + event[37])
-# print('corner_team ' + event[38])
-# print('corner_conceded_by ' + event[39])
-# print('substitution ' + event[40])
-# print('free_kick_player ' + event[41])
-# print('free_kick_team ' + event[42])
-# print('free_kick_where ' + event[43])
+# print(' free_kick_player ' + event[37])
+# print(' free_kick_team ' + event[38])
+# print(' free_kick_where ' + event[39])
+# print('corner ' + event[40])
+# print('corner_team  ' + event[41])
+# print('corner_conceded_by' + event[42])
+# print('substitution  ' + event[43])
 # print('sub_injury ' + event[44])
 # print('sub_team ' + event[45])
 # print('sub_player ' + event[46])
@@ -381,7 +386,9 @@ with ontology:
 # print('team_conceded_penalty ' + event[52])
 # print('half ' + event[53])
 # print('comment_id ' + event[54])
+# # # this dont work why
 # print('stoppage_time ' + event[55])
 # print('team_one_penalty_score ' + event[56])
 # print('team_two_penalty_score ' + event[57])
 # print('match_time_numeric ' + event[58])
+
