@@ -44,7 +44,7 @@ def main():
 
     for player in players:
         builder.add_player(player)
-
+    i = 1
     # Add Exhibition of Players
     for fileName in glob.glob('../Description/*.json'):
         with open(fileName) as matchjson:
@@ -79,8 +79,11 @@ def main():
             m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, events, stats, match['Date'])
             for exi in exhibitions:
                 if exi.hasEndMinute is None:
-                    exi.hasEndMinute = minute
-
+                    exi.hasEndMinute = int(minute)
+            if i == 10:
+                break
+            i += 1
+            print(i)
     # builder.add_exhibition(match)
     builder.save('ontology.xml')
 
