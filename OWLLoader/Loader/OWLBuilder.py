@@ -190,10 +190,10 @@ def add_event(event, home, away, date, previous_event):
         # print(event[46])
         # print(event[47])
         exi = add_exhibition(event[45], event[46], date)
-        exi.hasEndMinute = event[58]
+        exi.hasEndMinute = int(event[58])
 
         exi = add_exhibition(event[45], event[47], date)
-        exi.hasStartMinute = event[58]
+        exi.hasStartMinute = int(event[58])
         new_event = Substitution(title, namespace=ontology)
         new_event.wasPerformedByTeam = team
         new_event.hasEnteringPlayer = player1
@@ -202,12 +202,14 @@ def add_event(event, home, away, date, previous_event):
 
     else:
         new_event = Event(title, namespace=ontology)
+    if event[58] == 'NA':
+        new_event.occuredAtMinute = 0
+    else:
+        new_event.occuredAtMinute = int(event[58])
 
-    new_event.occuredAtMinute = event[58]
+    new_event.wasFollowedByCorner = bool(event[22])
 
-    new_event.wasFollowedByCorner = event[22]
-
-    new_event.wasFollowedBySetPiece = event[20]
+    new_event.wasFollowedBySetPiece = bool(event[20])
     new_event.hasDescription = event[1]
 
     return new_event

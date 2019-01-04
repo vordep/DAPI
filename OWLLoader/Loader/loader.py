@@ -79,8 +79,8 @@ def main():
             m = builder.add_match(match['Home Team'], match['Away Team'], exhibitions, events, stats, match['Date'])
             for exi in exhibitions:
                 if exi.hasEndMinute is None:
-                    exi.hasEndMinute = minute
-            if i == 100:
+                    exi.hasEndMinute = int(minute)
+            if i == 10:
                 break
             i += 1
             print(i)
