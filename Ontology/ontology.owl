@@ -541,6 +541,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#hasTeamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#hasTeamName">
+				<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+		
+		
+		
+		<!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#hasPlayerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#hasPlayerName">
+				<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#hasNetLocation -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#hasNetLocation">
@@ -611,9 +631,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#occuredAtMinute -->
+    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#occurredAtMinute -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#occuredAtMinute">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#occurredAtMinute">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -783,71 +803,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#VideoReview">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Event"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Chelsea -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Chelsea">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Eden_Hazard -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Eden_Hazard">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Player"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Eden_Hazard_Exhibition -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Eden_Hazard_Exhibition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Exhibition"/>
-        <hasPlayer rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Eden_Hazard"/>
-        <hasTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Chelsea"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Manchester_City -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Manchester_City">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Manchester_United -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Manchester_United">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#2018-10-10_Manchester_City_Chelsea -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#2018-10-10_Manchester_City_Chelsea">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Match"/>
-        <hasAwayTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Chelsea"/>
-        <hasExhibition rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Eden_Hazard_Exhibition"/>
-        <hasHomeTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Manchester_City"/>
-        <hasDate>2018-10-10</hasDate>
-    </owl:NamedIndividual>
     
 
 
