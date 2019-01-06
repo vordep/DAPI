@@ -170,9 +170,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByPlayer -->
+    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByPlayer -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByPlayer">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByPlayer">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Player"/>
@@ -180,9 +180,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByTeam -->
+    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByTeam -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByTeam">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByTeam">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>

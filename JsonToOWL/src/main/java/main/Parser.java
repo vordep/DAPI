@@ -427,7 +427,9 @@ public class Parser {
                 code += "   <hasVideoReviewEvent>" + ((VideoReview) event).getEvent() + "</hasVideoReviewEvent>\n" +
                         "   <hasVideoReviewResult>" + ((VideoReview) event).getResult() + "</hasVideoReviewResult>\n";
             } else if(event instanceof Delay) {
-                code += "   <causedByTeam>" + ((Delay) event).getTeam() + "</causedByTeam>\n";
+                if(!(((Delay) event).getTeam().equals("NA"))) {
+                    code += "   <causedByTeam rdf:resource=\"http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#" + ((Delay) event).getTeam() + "\"/>\n";
+                }
             } else if(event instanceof Corner) {
                 if(!(((Corner) event).getPlayer().equals("NA"))) {
                     code += "   <concededByPlayer rdf:resource=\"http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#" + ((Corner) event).getPlayer() + "\"/>\n";

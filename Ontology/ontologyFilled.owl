@@ -170,9 +170,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByPlayer -->
+    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByPlayer -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByPlayer">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByPlayer">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Player"/>
@@ -180,9 +180,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByTeam -->
+    <!-- http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByTeam -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommitedByTeam">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#wasCommittedByTeam">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>
@@ -803,7 +803,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#VideoReview">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Event"/>
     </owl:Class>
-		
+    
 		<owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Brighton_&amp;_Hove_Albion">
    <rdf:type rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Team"/>
    <hasTeamName>Brighton &amp; Hove Albion</hasTeamName>
@@ -7421,7 +7421,6 @@
    <hasDescription>Delay in match Ezequiel Schelotto (Brighton and Hove Albion) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>NA</causedByTeam>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-01_Brighton_&amp;_Hove_Albion_AFC_Bournemouth_87">
@@ -8882,7 +8881,7 @@
    <hasDescription>Delay in match Jesse Lingard (Manchester United) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Manchester_United</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Manchester_United"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-01_Everton_Manchester_United_96">
@@ -9115,7 +9114,7 @@
    <hasDescription>Delay in match Wes Morgan (Leicester City) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Leicester_City</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Leicester_City"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-01_Leicester_City_Huddersfield_Town_18">
@@ -9162,7 +9161,7 @@
    <hasDescription>Delay in match Shinji Okazaki (Leicester City) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Leicester_City</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Leicester_City"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Shot_2018-01-01_Leicester_City_Huddersfield_Town_23">
@@ -9828,7 +9827,7 @@
    <hasDescription>Delay in match Xherdan Shaqiri (Stoke City) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Stoke_City</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Stoke_City"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Shot_2018-01-01_Stoke_City_Newcastle_United_7">
@@ -10391,7 +10390,7 @@
    <hasDescription>Delay in match DeAndre Yedlin (Newcastle United) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Newcastle_United</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Newcastle_United"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Card_2018-01-01_Stoke_City_Newcastle_United_57">
@@ -10500,7 +10499,7 @@
    <hasDescription>Delay in match Erik Pieters (Stoke City) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Stoke_City</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Stoke_City"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-01_Stoke_City_Newcastle_United_70">
@@ -11333,7 +11332,7 @@
    <hasDescription>Delay in match Heurelho Gomes (Watford) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Watford</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Watford"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul_2018-01-02_Manchester_City_Watford_38">
@@ -12228,7 +12227,7 @@
    <hasDescription>Delay in match Jérémy Pied (Southampton) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Southampton</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Southampton"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Assist_2018-01-02_Southampton_Crystal_Palace_20">
@@ -14910,7 +14909,7 @@
    <hasDescription>Delay in match Aaron Cresswell (West Ham United) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>West_Ham_United</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#West_Ham_United"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-02_West_Ham_United_West_Bromwich_Albion_83">
@@ -18206,7 +18205,7 @@
    <hasDescription>Delay in match Gary Cahill (Chelsea) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Chelsea</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Chelsea"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-13_Chelsea_Leicester_City_43">
@@ -19362,7 +19361,7 @@
    <hasDescription>Delay in match Luka Milivojevic (Crystal Palace) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Crystal_Palace</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Crystal_Palace"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Assist_2018-01-13_Crystal_Palace_Burnley_28">
@@ -19888,7 +19887,7 @@
    <hasDescription>Delay in match Charlie Taylor (Burnley) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Burnley</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Burnley"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul_2018-01-13_Crystal_Palace_Burnley_71">
@@ -20727,7 +20726,7 @@
    <hasDescription>Delay in match Pablo Zabaleta (West Ham United) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>West_Ham_United</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#West_Ham_United"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Corner_2018-01-13_Huddersfield_Town_West_Ham_United_47">
@@ -21574,7 +21573,7 @@
    <hasDescription>Delay in match Mike van der Hoorn (Swansea City) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Swansea_City</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Swansea_City"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-13_Newcastle_United_Swansea_City_50">
@@ -21832,7 +21831,7 @@
    <hasDescription>Delay in match Martin Olsson (Swansea City) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Swansea_City</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Swansea_City"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-13_Newcastle_United_Swansea_City_76">
@@ -24000,7 +23999,7 @@
    <hasDescription>Delay in match Ryan Bertrand (Southampton) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>Southampton</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Southampton"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Foul_2018-01-13_Watford_Southampton_66">
@@ -25326,7 +25325,7 @@
    <hasDescription>Delay in match Craig Dawson (West Bromwich Albion) because of an injury.</hasDescription>
    <wasFollowedBySetPiece rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedBySetPiece>
    <wasFollowedByCorner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wasFollowedByCorner>
-   <causedByTeam>West_Bromwich_Albion</causedByTeam>
+   <causedByTeam rdf:resource="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#West_Bromwich_Albion"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapi/ontologies/2018/11/football-statistics#Substitution_2018-01-13_West_Bromwich_Albion_Brighton_&amp;_Hove_Albion_78">
@@ -28023,7 +28022,6 @@
 
 
 
-    
 
 
     <!-- 
