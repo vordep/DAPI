@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/football/football.owl#">
+  <!ENTITY ome		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression.owl#">
+  <!ENTITY omb		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being.owl#">
+  <!ENTITY loc		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space.owl#">
+  <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          "http://purl.org/dc/terms/">
+  <!ENTITY foaf "http://xmlns.com/foaf/0.1/#">
+]>
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:owl="&owl;"
+	 xmlns:xsd="&xsd;"
+	 xml:base="&base;"
+	 xml:omb="&omb;"
+	 xml:ome="&ome;"
+	 xml:loc="&loc;"
+	 xmlns:dc="&dc;"
+	 xmlns:foaf="&foaf;"
+	 xmlns:dct="&dct;">
+	
+ <owl:Ontology rdf:about="&base;">
+    <rdfs:label>Football Ontology</rdfs:label>
+    <dc:title xml:lang="en">Football Ontology</dc:title>
+    <dc:description xml:lang="en">An ontology which describes the world of football.</dc:description>
+    <dc:creator>Paul Rissen (mailto:p.rissen@gmail.com)</dc:creator>
+    <dct:created>2009-05-29</dct:created>
+    <owl:versionInfo>1.1</owl:versionInfo>
+  </owl:Ontology>
+
+
+<!-- Organisations - Confederations, FAs, Teams-->
+
+<owl:Class rdf:ID="Confederation">
+	<rdfs:label>Confederation</rdfs:label>
+	<rdfs:comment>A confederation is an organisation that brings together the footballing associations of several countries. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&omb;Organisation"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Football-Association">
+	<rdfs:label>Football Association</rdfs:label>
+	<rdfs:comment>A Football Association is an organisation that brings together the teams in a particular country.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&omb;Organisation"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Team">
+	<rdfs:label>Team</rdfs:label>
+	<rdfs:comment>A Team is a group of entities that work together to compete in footballing competitions. In order to do so, they must be registered with a Football Association.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&omb;Group"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Club">
+	<rdfs:label>Club</rdfs:label>
+	<rdfs:comment>A Club is a type of team that competes in club competitions.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Team"/>
+</owl:Class>
+
+<owl:Class rdf:ID="International-Team">
+	<rdfs:label>International Team</rdfs:label>
+	<rdfs:comment>A International Team is a type of team that represents a country and competes in International competitions.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Team"/>
+</owl:Class>
+
+<!-- I'm guessing there's an ontology somewhere to define a 'country', but in lieu of that, I'll use the Ontomedia definition. -->
+
+<!-- Relationships to link Clubs to FAs, FAs to Countries, and Countries to Confederations -->
+
+<owl:ObjectProperty rdf:ID="registered-with">
+	<rdfs:label>Registered With</rdfs:label>
+	<rdfs:domain rdf:resource="#Team"/>
+    <rdfs:range rdf:resource="#Football-Association"/>
+  </owl:ObjectProperty>
+
+<!-- Again, there's almost certainly a 'member-of' relationship somewhere already, so when I find a suitable match, I'll take this one out -->
+
+<owl:ObjectProperty rdf:ID="member-of">
+	<rdfs:label>Member Of</rdfs:label>
+	<rdfs:domain rdf:resource="#Football-Association"/>
+    <rdfs:range rdf:resource="#Confederation"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="represents-clubs-from">
+	<rdfs:label>Represents Clubs From</rdfs:label>
+	<rdfs:domain rdf:resource="#Football-Association"/>
+    <rdfs:range rdf:resource="&loc;Country"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="represents-country">
+	<rdfs:label>Represents Country</rdfs:label>
+	<rdfs:domain rdf:resource="#International-Team"/>
+    <rdfs:range rdf:resource="&loc;Country"/>
+  </owl:ObjectProperty>
+
+<!-- Competitions - Leagues, Cups, Seasons, Rounds, and certain types of Round -->
+
+<owl:Class rdf:ID="Competition">
+	<rdfs:label>Competition</rdfs:label>
+	<rdfs:comment>A competition is a format in which Clubs play matches against each other. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Context"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Competition-Instance">
+	<rdfs:label>Competition Instance</rdfs:label>
+	<rdfs:comment>A competition instance is the instance of a particular Competition in a particular Season. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Context"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Season">
+	<rdfs:label>Season</rdfs:label>
+	<rdfs:comment>A Season is a time period in which a number of Competitions may take place. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Event"/>
+</owl:Class>
+
+<owl:Class rdf:ID="League">
+	<rdfs:label>League</rdfs:label>
+	<rdfs:comment>A league is a type of Competition where all teams entered play each other at least once. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Competition"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Cup">
+	<rdfs:label>Cup</rdfs:label>
+	<rdfs:comment>A cup is a type of Competition where teams entered play each other in a knockout format. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Competition"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Round">
+	<rdfs:label>Round</rdfs:label>
+	<rdfs:comment>A Round is a stage of a competition, which may be defined explicitly (e.g. Matchday 1) or implicitly (e.g. the 20th game of a Season). </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Event"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Cup-Round">
+	<rdfs:label>Cup Round</rdfs:label>
+	<rdfs:comment>A Cup Round is a round which can only take place in the context of a Cup Competition. </rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Round"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Quarter-Final">
+	<rdfs:label>Quarter-Final</rdfs:label>
+	<rdfs:comment>A quarter-final is a round in a cup competition, where only eight teams compete.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Cup-Round"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Semi-Final">
+	<rdfs:label>Semi-Final</rdfs:label>
+	<rdfs:comment>A Semi-final is a round in a cup competition, where only four teams compete.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Cup-Round"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Final">
+	<rdfs:label>Final</rdfs:label>
+	<rdfs:comment>A final is a round in a cup competition, where only two teams compete, and the winner is declared the winner of the competition.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Cup-Round"/>
+</owl:Class>
+
+<!-- Relationships for the above competition types...not completely comfortable with 'instance-of' and 'has-instance' -->
+
+<owl:ObjectProperty rdf:ID="has-competition-instance">
+	<rdfs:label>Has Competition Instance</rdfs:label>
+	<owl:inverseOf rdf:resource="#competition-instance-in"/>
+	<rdfs:domain rdf:resource="#Season"/>
+    <rdfs:range rdf:resource="#Competition-Instance"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="competition-instance-in">
+	<rdfs:label>Competition Instance In</rdfs:label>
+	<owl:inverseOf rdf:resource="#has-competition-instance"/>
+	<rdfs:domain rdf:resource="#Competition-Instance"/>
+    <rdfs:range rdf:resource="#Season"/>
+  </owl:ObjectProperty>
+  
+ <owl:ObjectProperty rdf:ID="has-instance">
+	<rdfs:label>Has Instance</rdfs:label>
+	<owl:inverseOf rdf:resource="#instance-of"/>
+	<rdfs:domain rdf:resource="#Competition"/>
+    <rdfs:range rdf:resource="#Competition-Instance"/>
+  </owl:ObjectProperty> 
+  
+<owl:ObjectProperty rdf:ID="instance-of">
+	<rdfs:label>Instance Of</rdfs:label>
+	<owl:inverseOf rdf:resource="#has-instance"/>
+	<rdfs:domain rdf:resource="#Competition-Instance"/>
+    <rdfs:range rdf:resource="#Competition"/>
+  </owl:ObjectProperty>
+ 
+<owl:ObjectProperty rdf:ID="round-in">
+	<rdfs:label>Round Of</rdfs:label>
+	<owl:inverseOf rdf:resource="#has-round"/>
+	<rdfs:domain rdf:resource="#Round"/>
+    <rdfs:range rdf:resource="#Competition"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-round">
+	<rdfs:label>Has Round</rdfs:label>
+	<owl:inverseOf rdf:resource="#round-in"/>
+	<rdfs:domain rdf:resource="#Competition"/>
+    <rdfs:range rdf:resource="#Round"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="cup-round-in">
+	<rdfs:label>Cup Round of</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&base;round-in"/>
+	<owl:inverseOf rdf:resource="#has-cup-round"/>
+	<rdfs:domain rdf:resource="#Cup-Round"/>
+    <rdfs:range rdf:resource="#Cup"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-cup-round">
+	<rdfs:label>Has Cup Round</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&base;has-round"/>
+	<owl:inverseOf rdf:resource="#cup-round-in"/>
+	<rdfs:domain rdf:resource="#Cup"/>
+    <rdfs:range rdf:resource="#Cup-Round"/>
+  </owl:ObjectProperty>
+
+<!--Stuff related to a Team - Players, Managers, Stadiums - though of course they can change between team, or not belong to a team at all -->
+
+<owl:Class rdf:ID="Career">
+	<rdfs:label>Career</rdfs:label>
+	<rdfs:comment>A Career is the overall participation of a Person within the footballing world. It is an aggregation of Jobs, whether they are as a Player, Manager, or Referee</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Collection"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Job">
+	<rdfs:label>Job</rdfs:label>
+	<rdfs:comment>A Job is the participation of a Person within the footballing world in a specific role.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Context"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Player">
+	<rdfs:label>Player</rdfs:label>
+	<rdfs:comment>A Player is a role for a person, whereby they play for a Team</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Job"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Manager">
+	<rdfs:label>Manager</rdfs:label>
+	<rdfs:comment>A Manager is a role for a person, whereby they are responsible for a Team</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Job"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Referee">
+	<rdfs:label>Referee</rdfs:label>
+	<rdfs:comment>A Referee is a role for a person who is responsible for overseeing a Match between two Teams</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="#Job"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Stadium">
+	<rdfs:label>Stadium</rdfs:label>
+	<rdfs:comment>A Stadium is a location which is (or could potentially be) the base for a Team</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&foaf;Person"/>
+</owl:Class>
+
+
+<!-- Relationships between People and Jobs, Jobs and Careers, Players and Teams, Managers and Teams, and Stadiums and Teams -->
+
+<owl:ObjectProperty rdf:ID="has-job">
+	<rdfs:label>Has Job</rdfs:label>
+	<rdfs:domain rdf:resource="&foaf;Person"/>
+    <rdfs:range rdf:resource="#Job"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="part-of-career">
+	<rdfs:label>Part Of Career</rdfs:label>
+	<rdfs:domain rdf:resource="#Job"/>
+    <rdfs:range rdf:resource="#Career"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="playing-for">
+	<rdfs:label>Playing For</rdfs:label>
+	<rdfs:domain rdf:resource="#Player"/>
+    <rdfs:range rdf:resource="#Team"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="managing">
+	<rdfs:label>Managing</rdfs:label>
+	<rdfs:domain rdf:resource="#Manager"/>
+    <rdfs:range rdf:resource="#Team"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="home-of">
+	<rdfs:label>Home Of</rdfs:label>
+	<rdfs:domain rdf:resource="#Stadium"/>
+    <rdfs:range rdf:resource="#Team"/>
+  </owl:ObjectProperty>
+
+<!-- Matches and events within the Match -->
+
+<owl:Class rdf:ID="Match">
+	<rdfs:label>Match</rdfs:label>
+	<rdfs:comment>A Match is an event where two teams play each other</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Event"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Match-Timeline">
+	<rdfs:label>Match Timeline</rdfs:label>
+	<rdfs:comment>A Match Timeline is a timeline upon events within a Match occur</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Timeline"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Booking">
+	<rdfs:label>Booking</rdfs:label>
+	<rdfs:comment>A Booking is an event whereby a Player is cautioned for his behaviour</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Loss"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Sending-Off">
+	<rdfs:label>Sending Off</rdfs:label>
+	<rdfs:comment>A Sending Off is an event whereby a Player is removed from the field of play for his behaviour</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Loss"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Substitution">
+	<rdfs:label>Substitution</rdfs:label>
+	<rdfs:comment>A Substitution is an event whereby a Player is replaced with another Player from the same Team</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Transformation"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Goal">
+	<rdfs:label>Goal</rdfs:label>
+	<rdfs:comment>A Goal is an event whereby the match ball crosses the goal line, and the score for a specific team is increased by one</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Gain"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Final-Score">
+	<rdfs:label>Final Score</rdfs:label>
+	<rdfs:comment>The Final Score is the result of the total number of goals scored (for each Team) at the end of the Match</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="&ome;Expression"/>
+</owl:Class>
+
+<!-- Relationships between Teams and Matches, Referees and Matches, Competitions and Matches, and Stadiums and Matches -->
+<!-- Need to add something in to say that a Team competes in a particular Season of a Competition -->
+
+<owl:ObjectProperty rdf:ID="competes-in">
+	<rdfs:label>Competes In</rdfs:label>
+	<rdfs:domain rdf:resource="#Team"/>
+    <rdfs:range rdf:resource="#Match"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="oversees">
+	<rdfs:label>Oversees</rdfs:label>
+	<owl:inverseOf rdf:resource="#overseen-by"/>
+	<rdfs:domain rdf:resource="#Referee"/>
+    <rdfs:range rdf:resource="#Match"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="overseen-by">
+	<rdfs:label>Overseen By</rdfs:label>
+	<owl:inverseOf rdf:resource="#oversees"/>
+	<rdfs:domain rdf:resource="#Match"/>
+    <rdfs:range rdf:resource="#Referee"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="is-fixture-in">
+	<rdfs:label>Is Fixture In</rdfs:label>
+	<owl:inverseOf rdf:resource="#has-fixture"/>
+	<rdfs:domain rdf:resource="#Match"/>
+    <rdfs:range rdf:resource="#Competition-Instance"/>
+  </owl:ObjectProperty>
+  
+<owl:ObjectProperty rdf:ID="has-fixture">
+	<rdfs:label>Has Fixture</rdfs:label>
+	<owl:inverseOf rdf:resource="#is-fixture-in"/>
+	<rdfs:domain rdf:resource="#Competition-Instance"/>
+    <rdfs:range rdf:resource="#Match"/>
+  </owl:ObjectProperty>
+  
+<owl:ObjectProperty rdf:ID="is-fixture-of">
+	<rdfs:label>Is Fixture In</rdfs:label>
+	<owl:inverseOf rdf:resource="#round-has-fixture"/>
+	<rdfs:domain rdf:resource="#Match"/>
+    <rdfs:range rdf:resource="#Round"/>
+  </owl:ObjectProperty>  
+  
+<owl:ObjectProperty rdf:ID="round-has-fixture">
+	<rdfs:label>Is Fixture In</rdfs:label>
+	<owl:inverseOf rdf:resource="#is-fixture-of"/>
+	<rdfs:domain rdf:resource="#Round"/>
+    <rdfs:range rdf:resource="#Match"/>
+  </owl:ObjectProperty>  
+
+<owl:ObjectProperty rdf:ID="is-result-of">
+	<rdfs:label>Is Result Of</rdfs:label>
+	<rdfs:domain rdf:resource="#Final-Score"/>
+    <rdfs:range rdf:resource="#Match"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="is-hosted-by">
+	<rdfs:label>Is Hosted By</rdfs:label>
+	<rdfs:domain rdf:resource="#Match"/>
+    <rdfs:range rdf:resource="#Stadium"/>
+  </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="is-key-moment-in">
+    <rdfs:label>Is Key Moment In</rdfs:label>
+    <rdfs:comment>Is a key moment in a particular Match</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Booking"/>
+          <owl:Class rdf:about="#Sending-Off"/>
+          <owl:Class rdf:about="#Substitution"/>
+          <owl:Class rdf:about="#Goal"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Match"/>
+  </owl:ObjectProperty>
+
+<!--
+Competition takes place in Season
+Season has instance of Competition
+Competiton has Round
+Match is fixture in Round
+
+
+
+F.A. Cup Final 2008-09 Chelsea vs Everton
+
+F.A Cup = Competition
+	2008-09 = Season
+		Final = Round
+			Match = Chelsea vs Everton
+
+Season = 2008-09
+	Competition = F.A. Cup
+		Round = Final
+			Match = Chelsea vs Everton
+	Competition = UEFA Champions League
+		Round = Final
+			Match = Barcelona vs Man Utd
+	Competition = F.A. Premier League
+		Round = Matchday 38
+			Match = Sunderland vs Chelsea
+			Match = Barnsley vs Bradford
+			-->
+			
+</rdf:RDF>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
